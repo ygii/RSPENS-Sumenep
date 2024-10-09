@@ -78,9 +78,22 @@
 .navbar-login:hover {
   background-color: #0056b3;
 }
+@keyframes changeBackground {
+  0% {
+    background-image: url("../assets/img/Background1.jpeg");
+  }
+  33% {
+    background-image: url("../assets/img/Background2.jpeg");
+  }
+  66% {
+    background-image: url("../assets/img/Background3.jpeg");
+  }
+  100% {
+    background-image: url("../assets/img/Background1.jpeg");
+  }
+}
 
 .header {
-  background-image: url("../assets/img/Background.jpeg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -88,7 +101,9 @@
   color: white;
   text-align: center;
   padding-top: 50px;
+  animation: changeBackground 10s infinite; /* Durasi 10 detik, latar belakang berubah terus */
 }
+
 .header .overlay {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -97,22 +112,27 @@
   right: 0;
   bottom: 0;
 }
+
 .header .content {
   position: relative;
   z-index: 1;
 }
+
 .header h1 {
   font-size: 48px;
   margin: 0;
 }
+
 .header h2 {
   font-size: 36px;
   margin: 10px 0;
 }
+
 .header p {
   font-size: 18px;
   margin: 20px 0;
 }
+
 .search-box {
   background-color: white;
   padding: 20px;
