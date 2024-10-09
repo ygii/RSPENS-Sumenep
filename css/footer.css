@@ -1,70 +1,70 @@
 .footer {
-    background-color: #c5c7c9;
-    padding: 20px 0;
-  }
-  
-  .footer-container {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-  }
-  
-  .footer-section {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .footer-section h3 {
-    margin-bottom: 10px;
-    font-size: 18px;
-    color: #333;
-  }
-  
-  .footer-section ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .footer-section ul li {
-    margin-bottom: 10px;
-  }
-  
-  .footer-section ul li a {
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .footer-section ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  .logo-section img {
-    height: 200px;
-    width: auto;
-  }
-  
-  .registration-section {
-    background-color: #81b7dc;
-    text-align: center;
-    padding: 15px;
-  }
-  
-  .registration-section p {
-    color: #fff;
-    margin-bottom: 10px;
-    font-size: 16px;
-  }
-  
-  .register-button {
-    background-color: #fff;
-    color: #333;
-    border: none;
-    padding: 10px 20px;
-    font-size: 14px;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  
-  .register-button:hover {
-    background-color: #ddd;
-  }
+  background-color: #c5c7c9;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.logo-section img {
+  height: 200px;
+  width: auto;
+}
+
+.registration-section {
+  background-color: #81b7dc;
+  text-align: center;
+  padding: 15px;
+}
+
+.registration-section p {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.register-button {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.register-button:hover {
+  background-color: #ddd;
+}
