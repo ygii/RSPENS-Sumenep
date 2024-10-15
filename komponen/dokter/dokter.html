@@ -1,0 +1,81 @@
+    <html></html>
+    <head>
+    <title>
+    Doctor Selection
+    </title>
+    <style>
+    body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+            .container {
+                position: relative;
+                text-align: center;
+                color: white;
+            }
+            .background-image {
+                width: 100%;
+                height: 100vh;
+                object-fit: cover;
+            }
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0, 0, 0, 0.4);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .selection-box {
+                display: flex;
+                background-color: rgba(255, 255, 255, 0.8);
+                padding: 10px;
+                border-radius: 5px;
+            }
+            .selection-box select, .selection-box button {
+                margin: 0 10px;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 16px;
+            }
+            .selection-box button {
+                background-color: #007bff;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+            .selection-box button:hover {
+                background-color: #0056b3;
+            }
+    </style>
+    </head>
+    <body>
+    <div class="container">
+    <img alt="Background image of doctors" class="background-image" height="1080" src="https://storage.googleapis.com/a1aa/image/hXkvhdRawBoeOyrsuAdt1vlLE9gBhNOjm0B9EAIUHXzYrXyJA.jpg" width="1920"/>
+    <div class="overlay">
+        <div class="selection-box">
+        <select>
+        <option>
+        Pilih Spesialis
+        </option>
+        </select>
+        <select>
+        <option>
+        Pilih Dokter
+        </option>
+        </select>
+        <button>
+        <i class="fas fa-search">
+        </i>
+        CARI
+        </button>
+        </div>
+    </div>
+    </div>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    </body>
+    </html>
