@@ -1,0 +1,94 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Doctors
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css")
+    style.
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f7fa;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .doctor-card {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+      .doctor-card img {
+        border-radius: 10px;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        margin-right: 20px;
+      }
+      .doctor-info {
+        flex: 1;
+      }
+      .doctor-info h3 {
+        margin: 0;
+        color: #007bff;
+      }
+      .doctor-info p {
+        margin: 5px 0;
+        color: #333;
+      }
+      .doctor-info .specialty {
+        color: #666;
+      }
+      .button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+  body
+    .container
+      .doctor-card
+        img(src="https://storage.googleapis.com/a1aa/image/RYfhGwfvQlhIhUqxU10iGVsYT2GOAqBTAjesy8fZf6Oa0eL5E.jpg" alt="Portrait of dr. Adrian Ridski Harsono, Sp.N")
+        .doctor-info
+          h3 dr. Adrian Ridski Harsono, Sp.N
+          p.specialty Neurologi
+          p Keahlian:
+          p -
+          a.button(href="#") Selengkapnya
+      .doctor-card
+        img(src="https://storage.googleapis.com/a1aa/image/9MamXtZtSWJyCNMfEJ2DhNaZXg5mXDzvYeD075OSSoHk2vkTA.jpg" alt="Portrait of dr. Yasmin Shabira Wityaningsih")
+        .doctor-info
+          h3 dr. Yasmin Shabira Wityaningsih
+          p.specialty Dokter Umum
+          p Keahlian:
+          p -
+          a.button(href="#") Selengkapnya
+      .doctor-card
+        img(src="https://storage.googleapis.com/a1aa/image/fa6eAf6FMyYjopiozGniv0OA1e6jSTWmivP0JdpQgWIf0eL5E.jpg" alt="Portrait of dr. Stefina Veronika")
+        .doctor-info
+          h3 dr. Stefina Veronika
+          p.specialty Dokter Umum
+          p Keahlian:
+          p -
+          a.button(href="#") Selengkapnya
+      .doctor-card
+        img(src="https://storage.googleapis.com/a1aa/image/uttDlzHMwnJ8DRgKupE3Of1CkilfzTPIUjF8uYPcQmnm2vkTA.jpg" alt="Portrait of dr. Sri Wahdini, Sp.Ak, M.Biomed")
+        .doctor-info
+          h3 dr. Sri Wahdini, Sp.Ak, M.Biomed
+          p.specialty Akupunktur Medik
+          p Keahlian:
+          p -
+          a.button(href="#") Selengkapnya

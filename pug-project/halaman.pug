@@ -1,0 +1,56 @@
+mixin navbar
+    nav.navbar
+        .navbar-logo
+            img(src="logo.png", alt="Logo")
+        .navbar-menu
+            a(href="#") Home
+            a(href="#") About
+            a(href="#") Contact
+        .navbar-login
+            a.navbar-login(href="#") Login
+
+mixin denah
+    section.denah
+        h1 Peta Lokasi
+        p Berikut adalah peta lokasi perusahaan kami. Klik untuk melihat detail lebih lanjut.
+        img(src="denah.png", alt="Denah Lokasi", style="width:100%; max-width:600px;")
+
+mixin footer
+    footer.footer
+        .footer-container
+            .footer-section
+                h3 Tentang Kami
+                ul
+                    li: a(href="#") Profil
+                    li: a(href="#") Karir
+                    li: a(href="#") Kontak
+            .footer-section
+                h3 Bantuan
+                ul
+                    li: a(href="#") FAQ
+                    li: a(href="#") Panduan
+                    li: a(href="#") Kebijakan Privasi
+            .footer-section
+                h3 Sosial Media
+                ul
+                    li: a(href="#") Facebook
+                    li: a(href="#") Instagram
+                    li: a(href="#") Twitter
+
+
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Halaman Utama
+        link(rel="stylesheet", href="styles.css") //- Tambahkan file CSS eksternal jika diperlukan
+    body
+
+        block navbar
+            +navbar()
+
+        block denah
+            +denah()
+
+        block footer
+            +footer()
