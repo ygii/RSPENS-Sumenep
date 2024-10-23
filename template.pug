@@ -1,7 +1,19 @@
-include komponen/pug/_component.pug
-
+include pug/_component.pug
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Website Title
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css")
+    link(rel="stylesheet", href="koponen/css/button.css")
+    link(rel="stylesheet", href="komponen/css/navbar.css")
+    link(rel="stylesheet", href="komponen/css/footer.css")
+  
   body
-    block navbar
-        +navbar
-    block footer 
-        +footer
+    block navbar 
+          block button 
+          +button
+    block footer
+          +footer
+    
