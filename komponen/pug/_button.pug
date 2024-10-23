@@ -1,0 +1,85 @@
+mixin button(letter)
+  div= letter
+
+mixin alphabetButtons
+  .alphabet
+    +button('A')
+    +button('B')
+    +button('C')
+    +button('D')
+    +button('E')
+    +button('F')
+    +button('G')
+    +button('H')
+    +button('I')
+    +button('J')
+    +button('K')
+    +button('L')
+    +button('M')
+    +button('N')
+    +button('O')
+    +button('P')
+    +button('Q')
+    +button('R')
+    +button('S')
+    +button('T')
+    +button('U')
+    +button('V')
+    +button('W')
+    +button('X')
+    +button('Y')
+    +button('Z')
+
+doctype html
+html
+  head
+    title Kelainan & Penyakit
+    style.
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      h1 {
+        font-size: 2em;
+        color: #333;
+        margin-bottom: 10px;
+      }
+      .subtitle {
+        font-size: 1em;
+        color: #666;
+        margin-bottom: 30px;
+      }
+      .alphabet {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 30px;
+      }
+      .alphabet div {
+        background-color: #e9ecef;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 1.2em;
+        color: #333;
+        cursor: pointer;
+      }
+      .section-title {
+        font-size: 1.5em;
+        color: #333;
+        margin-bottom: 20px;
+      }
+  body
+    .container
+      h1 KELAINAN & PENYAKIT
+      .subtitle Informasi komprehensif tentang kondisi kelainan dan penyakit
+      +alphabetButtons
+      .section-title Daftar Kelainan & Penyakit

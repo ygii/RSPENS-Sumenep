@@ -1,0 +1,40 @@
+mixin footer(title, links)
+  .footer-section
+    h3= title
+    ul
+      each link in links
+        li: a(href=link.href)= link.text
+
+mixin logoSection(imageSrc, altText)
+  .footer-section.logo-section
+    img(src=imageSrc alt=altText)
+
+mixin registrationSection(text, buttonText)
+  .registration-section
+    p= text
+    button.register-button= buttonText
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Document
+    link(rel="stylesheet", href="../css/footer.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css")
+  body
+    .footer
+      .footer-container
+        +footerSection('Tautan', [
+          { href: '#', text: 'Tentang Kami' },
+          { href: '#', text: 'Hubungi Kami' },
+          { href: '#', text: 'Mengenai Situs Ini' },
+          { href: '#', text: 'Artikel Populer' }
+        ])
+        +footerSection('Lainnya', [
+          { href: '#', text: 'Kebijakan Privasi' },
+          { href: '#', text: 'Galeri Photo' },
+          { href: '#', text: 'Pens DDK' }
+        ])
+        +logoSection('assets/img/Logo_PENS.png', 'PENS Logo')
+      +registrationSection('Pendaftaran poliklinik dan vaksin', 'KLIK DISINI')
