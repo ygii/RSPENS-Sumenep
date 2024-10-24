@@ -1,0 +1,65 @@
+extends template.pug
+
+block content
+  // Header Section with Doctor Search
+  section.doctor-search
+    .search-container
+      .search-field
+        select
+          option(value="") Pilih Spesialis
+          //- Add more options here
+        select
+          option(value="") Pilih Dokter
+          //- Add more options here
+        button.search-btn CARI
+
+  // Doctor Listing Section
+  section.doctor-listing
+    .container
+      .doctor-card
+        img(src="doctor1.jpg" alt="Dr. Mala Azitha")
+        .doctor-info
+          h3 dr. Mala Azitha
+          p Dokter Umum
+          p Keahlian: -
+          button Selengkapnya
+
+      .doctor-card
+        img(src="doctor2.jpg" alt="Dr. Herlin Oktaviyani")
+        .doctor-info
+          h3 dr. Herlin Oktaviyani
+          p Dokter Umum
+          p Keahlian: -
+          button Selengkapnya
+
+      .doctor-card
+        img(src="doctor3.jpg" alt="Dr. Yohannessa Wulandari")
+        .doctor-info
+          h3 dr. Yohannessa Wulandari, M. Gizi
+          p Ilmu Gizi Klinik
+          p Keahlian: -
+          button Selengkapnya
+
+      .doctor-card
+        img(src="doctor4.jpg" alt="Dr. Cepi Teguh Pramayadi")
+        .doctor-info
+          h3 dr. Cepi Teguh Pramayadi, Sp.OG(K)
+          p Obstetri dan Ginekologi
+          p Keahlian: -
+          button Selengkapnya
+
+      .doctor-card
+        img(src="doctor5.jpg" alt="Dr. Karla Duha")
+        .doctor-info
+          h3 dr. Karla Duha
+          p Dokter Umum
+          p Keahlian: -
+          button Selengkapnya
+
+      .doctor-card
+        img(src="doctor6.jpg" alt="Dr. Putri Paramita Sakti")
+        .doctor-info
+          h3 dr. Putri Paramita Sakti, Sp.KFR
+          p Ilmu Kedokteran Fisik dan Rehabilitasi
+          p Keahlian: -
+          button Selengkapnya

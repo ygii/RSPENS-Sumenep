@@ -359,3 +359,105 @@ body {
 .location-card:hover {
   transform: translateY(-10px);
 }
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Header Search Section */
+.doctor-search {
+  background: url("header-background.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 50px 0;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-field {
+  display: flex;
+  gap: 10px;
+}
+
+select,
+.search-btn {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+.search-btn {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Doctor Listing Section */
+.doctor-listing .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 50px;
+}
+
+.doctor-card {
+  background-color: white;
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.doctor-card img {
+  width: 100%;
+  height: auto;
+}
+
+.doctor-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.doctor-info h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.doctor-info p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.doctor-info button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.doctor-info button:hover {
+  background-color: #0056b3;
+}
+
+/* Doctor Card Hover Effect */
+.doctor-card:hover {
+  transform: translateY(-10px);
+}
