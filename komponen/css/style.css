@@ -13,7 +13,6 @@ body {
   background-color: #f9f9f9;
   padding: 50px;
   text-align: left;
-  position: relative;
 }
 
 .container {
@@ -29,21 +28,25 @@ body {
 
 .features {
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  gap: 20px; /* Add spacing between feature items */
+  flex-direction: column;
+  gap: 20px;
   margin-bottom: 40px;
 }
 
 .feature-item {
   display: flex;
-  flex-direction: column; /* Stack icon and text vertically */
-  align-items: flex-start;
-  text-align: left;
+  align-items: center; /* Align icon and text horizontally */
 }
 
 .feature-item img {
   width: 40px;
-  margin-bottom: 15px; /* Add space between icon and text */
+  margin-right: 20px; /* Space between icon and text */
+}
+
+.feature-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 .feature-text h3 {
@@ -94,7 +97,7 @@ body {
 }
 
 .offer-item {
-  width: 23%; /* Four items per row */
+  width: 23%;
   background-color: white;
   padding: 20px;
   border-radius: 10px;
@@ -142,19 +145,24 @@ body {
   padding: 10px 20px;
 }
 
+/* Logo section */
 .navbar-logo img {
   height: 50px;
 }
 
+/* Center menu container */
 .navbar-menu {
   display: flex;
   align-items: center;
+  justify-content: center; /* Center the menu items */
+  flex-grow: 1; /* Let the menu items take up the center space */
 }
 
+/* Centered menu items */
 .navbar-menu a {
+  padding: 0 15px;
   text-decoration: none;
   color: #343a40;
-  margin-right: 20px;
   font-size: 14px;
 }
 
@@ -209,6 +217,7 @@ body {
   color: white;
   text-decoration: none;
   border-radius: 5px;
+  margin-left: auto; /* Push the login button to the right */
 }
 
 .navbar-login:hover {
@@ -285,4 +294,68 @@ body {
 
 .register-button:hover {
   background-color: #ddd;
+}
+
+/* petunjuk lokasi */
+
+.location-guidance {
+  background-color: #f9f9f9;
+  padding: 50px;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.location-guidance h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.location-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.location-card {
+  width: 30%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.location-card img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.location-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.location-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.location-btn:hover {
+  background-color: #0056b3;
+}
+
+.location-card:hover {
+  transform: translateY(-10px);
 }
