@@ -1,10 +1,10 @@
-include komponen/pug/_component.pug
+include _component.pug
 
 doctype html
 html(lang="en")
   head
     meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title Website Title
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css")
     link(rel="stylesheet", href="komponen/css/style.css")
@@ -12,6 +12,15 @@ html(lang="en")
     block navbar
 
     block content
-    
+
+    block specialOffers
+      +specialOffers
+
+    block locationGuidance
+      +locationGuidance
+      
+    block doctorSearch
+      +doctorSearch
+
     block footer
-      +footer 
+      +footer

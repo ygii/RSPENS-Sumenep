@@ -1,19 +1,8 @@
-extends template.pug
+extends komponen/pug/_template.pug
 
 block content
-  // Header Section with Doctor Search
-  section.doctor-search
-    .search-container
-      .search-field
-        select
-          option(value="") Pilih Spesialis
-          //- Add more options here
-        select
-          option(value="") Pilih Dokter
-          //- Add more options here
-        button.search-btn CARI
+  +doctorSearch
 
-  // Doctor Listing Section
   section.doctor-listing
     .container
       .doctor-card
@@ -63,3 +52,7 @@ block content
           p Ilmu Kedokteran Fisik dan Rehabilitasi
           p Keahlian: -
           button Selengkapnya
+
+block doctorSearch
+block specialOffers
+block locationGuidance
