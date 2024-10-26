@@ -1,0 +1,35 @@
+//- Definisi mixin
+mixin layananGawatDarurat(judul, deskripsi, layanan = [], galeri = [])
+  .layanan-gawat-darurat
+    h1= judul
+    p.deskripsi= deskripsi
+    h3 Layanan
+    ul.layanan
+      each item in layanan
+        li= item
+    h3 Galeri
+    .galeri
+      each gambar in galeri
+        img(src=gambar.src, alt=gambar.alt)
+
+//- Pemanggilan mixin
++layananGawatDarurat(
+  "Gawat Darurat",
+  "RSU menyediakan layanan gawat darurat selama 24 jam, melayani pasien dengan berbagai kondisi medis darurat...",
+  [
+    "Ruang observasi emergency (5 bed)",
+    "Ruang resusitasi (2 bed)",
+    "Ruang HCU (4 bed)",
+    "Ruang poli khusus reguler/bedah",
+    "Ruang poli umum/reguler khusus reguler",
+    "Ventilator",
+    "High flow nasal cannula",
+    "Isolator defibrilator",
+    "Alat rontgen",
+    "Ambulan gawat darurat"
+  ],
+  [
+    { src: "path/to/image1.jpg", alt: "Gawat Darurat 1" },
+    { src: "path/to/image2.jpg", alt: "Gawat Darurat 2" }
+  ]
+)
