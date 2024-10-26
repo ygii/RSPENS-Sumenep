@@ -1,0 +1,37 @@
+extends komponen/pug/_template.pug
+
+block content
+  .faq-container
+    h1.faq-title Frequently Asked Questions
+
+    .faq-section
+      h3.faq-question Apa yang harus saya lakukan dalam keadaan gawat darurat (Emergensi)?
+      p.faq-answer 
+        | Bila Anda atau keluarga mengalami kondisi gawat darurat, segera cari pertolongan ke IGD RS terdekat 
+        | atau IGD RSPENS Sumenep. Untuk informasi kegawatdaruratan, Anda juga dapat menghubungi IGD RSPENS 
+        | Sumenep di nomor 085331627xxx. Untuk kondisi bukan gawat darurat (misalnya pegal-pegal, nyeri tenggorokan, 
+        | dan infeksi saluran kemih), Anda dapat mempertimbangkan pilihan layanan lainnya seperti:
+      ul.faq-options
+        li Berkonsultasi dengan dokter spesialis di Poliklinik
+        li Customer Service RSPENS Sumenep
+        li Berkonsultasi dengan dokter di Fasilitas Kesehatan Tingkat Pertama (Pusat Kesehatan Masyarakat dan Klinik)
+        li Berkonsultasi dengan dokter pribadi Anda
+
+    .image-section
+      img(src="path-to-hospital-image.jpg", alt="Rumah Sakit Sumenep", class="hospital-image")
+
+    h2.patient-title Pengalaman Pasien
+
+    .patient-experiences
+      .patient-card
+        img(src="path-to-image1.jpg", alt="MOH.Khairil Anwar", class="patient-image")
+        p.patient-name MOH.Khairil Anwar
+        p.patient-feedback cukup memuaskan bagi saya
+      .patient-card
+        img(src="path-to-image2.jpg", alt="Dorik PraYogik F", class="patient-image")
+        p.patient-name Dorik PraYogik F
+        p.patient-feedback RSPENS Sumenep. Untuk informasi kegawatdaruratan Anda juga dapat menghubungi IGD RSPENS Sumenep
+      .patient-card
+        img(src="path-to-image3.jpg", alt="MOH.Royhan Firdaus", class="patient-image")
+        p.patient-name MOH.Royhan Firdaus
+        p.patient-feedback cukup memuaskan bagi saya

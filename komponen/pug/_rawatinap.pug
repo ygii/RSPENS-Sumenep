@@ -1,0 +1,11 @@
+mixin inpatientSection(title, id, content)
+  input.inpatient-accordion-toggle(type="checkbox", id=id)
+  label.inpatient-accordion-label(for=id) #{title}
+  .inpatient-accordion-content
+    if content.images && content.images.type === 'images'
+      each imgSrc in content.images.sources
+        img(src=imgSrc, alt=content.images.alt)
+    if content.list && content.list.type === 'list'
+      ul
+        each item in content.list.items
+          li= item

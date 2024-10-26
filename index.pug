@@ -1,6 +1,7 @@
 extends komponen/pug/_template.pug
 
 block content
+  +searchBox
   // Mengapa Kami Section
   section.why-choose-us
     .container
@@ -28,5 +29,5 @@ block content
             p Mengembangkan kolaborasi interprofesional dalam pelayanan, riset bidang kesehatan, serta pengabdian masyarakat
       button.learn-more-btn Selengkapnya
 
-block doctorSearch
-block locationGuidance
+  // Special Offers Section
+  +specialOffers

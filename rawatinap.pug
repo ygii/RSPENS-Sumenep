@@ -1,0 +1,33 @@
+extends komponen/pug/_template.pug
+
+block content
+  .inpatient-container
+    h1.inpatient-title RAWAT INAP
+
+    // VVIP Section
+    +inpatientSection('VVIP', 'vvip', {
+      images: {
+        type: 'images',
+        sources: [
+          'https://storage.googleapis.com/a1aa/image/QiSvnUiSLIpvPRinvmX9tzK6tPq0yCfweMOZLAVmPfLT08UnA.jpg',
+          'https://storage.googleapis.com/a1aa/image/eVbMdnb5orRgGiOSeD5JZEHMemBbcyMxYnKNiCNmGPiP08UnA.jpg'
+        ],
+        alt: 'Room with facilities'
+      },
+      list: {
+        type: 'list',
+        items: [
+          'AC', 
+          'Satu Tempat Tidur Pasien', 
+          'Satu Kamar Mandi Dalam Dengan Air Hangat', 
+          'Ruang Keluarga', 
+          'Dapur Kering', 
+          'Sofa Mini', 
+          'Satu TV', 
+          'Satu Dispenser', 
+          'Satu Set Teh & Kopi', 
+          'Satu Meja dan Kursi Makan'
+        ]
+      }
+    })
+
