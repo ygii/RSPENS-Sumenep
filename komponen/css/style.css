@@ -369,38 +369,38 @@ body {
 }
 
 /* Header Search Section */
-.doctor-search {
+.doctor-search-section {
   background: url("header-background.jpg") no-repeat center center;
   background-size: cover;
   padding: 50px 0;
 }
 
-.search-container {
+.doctor-search-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.search-field {
+.doctor-search-field {
   display: flex;
   gap: 10px;
 }
 
-select,
-.search-btn {
+.doctor-select,
+.doctor-search-btn {
   padding: 10px;
   border-radius: 5px;
   border: none;
   font-size: 16px;
 }
 
-.search-btn {
+.doctor-search-btn {
   background-color: #007bff;
   color: white;
   cursor: pointer;
 }
 
-.search-btn:hover {
+.doctor-search-btn:hover {
   background-color: #0056b3;
 }
 
@@ -527,19 +527,23 @@ select,
   line-height: 1.6;
 }
 
-/* pecarian halaman utama */
+/* Pencarian halaman utama */
 .search-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px; /* Tinggi dari container, sesuaikan dengan kebutuhan */
-  background-image: url("path/to/your-background-image.jpg"); /* Path ke gambar latar belakang */
-  background-size: cover; /* Agar gambar sesuai dengan ukuran container */
-  background-position: center; /* Gambar berada di tengah */
+  height: 70vh; /* Tetap 70% dari viewport */
+  background-image: url("../assets/img/RSPENS-Sumenep.png");
+  background-size: contain; /* Gunakan contain agar gambar tidak terpotong */
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  margin: 20px;
+  margin: 0 auto; /* Menjaga agar tetap di tengah */
+  width: 100%; /* Pastikan lebar container menyesuaikan */
+  max-width: 2000px; /* Batas maksimal lebar agar tidak terlalu panjang */
+  text-align: center; /* Tambahkan text-align agar konten di dalam container juga terpusat */
 }
 
 .search-box {
@@ -550,20 +554,24 @@ select,
     0.9
   ); /* Warna latar belakang kotak pencarian */
   border-radius: 10px;
-  padding: 20px;
+  padding: 20px; /* Ukuran padding diperbesar sedikit */
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px; /* Mengurangi lebar maksimum kotak pencarian */
+  margin: 0 auto; /* Tetapkan margin auto untuk memusatkan kotak pencarian */
 }
 
 .search-box h2 {
-  font-size: 24px;
+  font-size: 22px; /* Ukuran font sedikit diperbesar */
   color: #333;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .search-box p {
   color: #666;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  font-size: 16px;
 }
 
 .search-input {
@@ -574,7 +582,7 @@ select,
   border-radius: 25px;
   padding: 10px;
   width: 100%;
-  max-width: 500px;
+  max-width: 500px; /* Lebar maksimal input sedikit diperbesar */
   background-color: #fff;
 }
 
@@ -582,16 +590,16 @@ select,
   border: none;
   outline: none;
   flex: 1;
-  padding: 10px;
-  font-size: 16px;
+  padding: 12px; /* Padding input diperbesar */
+  font-size: 16px; /* Ukuran font input diperbesar */
 }
 
 button.search-btn {
   background-color: #007bff;
   color: #fff;
   border: none;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 12px 20px; /* Padding tombol diperbesar */
+  font-size: 16px; /* Ukuran font tombol diperbesar */
   border-radius: 25px;
   cursor: pointer;
   display: flex;
@@ -599,7 +607,8 @@ button.search-btn {
 }
 
 button.search-btn i {
-  margin-right: 5px;
+  margin-right: 8px;
+  font-size: 16px;
 }
 
 /* rawat inap */
@@ -850,4 +859,53 @@ button.search-btn i {
 .patient-feedback {
   font-size: 0.9rem;
   color: #666;
+}
+
+/* visi misi */
+.visi-misi-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+}
+
+.visi-misi-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.visi-misi-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #1a73e8;
+  margin: 10px auto;
+}
+
+.visi-title,
+.misi-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.visi-text,
+.misi-list {
+  text-align: left;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.misi-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.misi-list li {
+  margin: 5px 0;
 }
