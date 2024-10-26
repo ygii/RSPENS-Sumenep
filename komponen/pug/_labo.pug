@@ -1,0 +1,29 @@
+mixin labPage
+  .lab-container
+    .header
+      h1 Selamat Datang Di
+      h2 Laboratorium
+
+    .description
+      p Lab description text goes here...
+
+    .facility-section
+      h3 Laboratorium Mikrobiologi Klinik
+      ul.facility-list
+        li Pemeriksaan Pewarnaan Gram
+        li Pemeriksaan Pewarnaan AFB
+        li Pemeriksaan Kultur Mikroba
+
+    .accordion
+      each item in ['Laboratorium Mikrobiologi Klinik', 'Laboratorium Mikrobiologi Dasar', 'Laboratorium Mikrobiologi Lanjut', 'Laboratorium Mikrobiologi Industri']
+        .accordion-item
+          input(type="checkbox" id=item name="accordion")
+          label(for=item)= item
+          .accordion-content
+            p Details for #{item}...
+
+    .gallery
+      h3 Galeri
+      .gallery-images
+        each img in ['image1.jpg', 'image2.jpg', 'image3.jpg']
+          img(src=`/path/to/${img}`, alt='Lab Image')
