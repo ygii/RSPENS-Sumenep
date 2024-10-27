@@ -370,9 +370,21 @@ body {
 
 /* Header Search Section */
 .doctor-search-section {
-  background: url("header-background.jpg") no-repeat center center;
-  background-size: cover;
-  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; /* Tetap 70% dari viewport */
+  background-image: url("../assets/img/cari-dokter-lg.jpg");
+  background-size: contain; /* Gunakan contain agar gambar tidak terpotong */
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0 auto; /* Menjaga agar tetap di tengah */
+  width: 100%; /* Pastikan lebar container menyesuaikan */
+  max-width: 2000px; /* Batas maksimal lebar agar tidak terlalu panjang */
+  text-align: center;
 }
 
 .doctor-search-container {
@@ -612,24 +624,31 @@ button.search-btn i {
 }
 
 /* rawat inap */
-.inpatient-body {
+/* General Styling */
+body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
   margin: 0;
   padding: 0;
 }
 
+h1.inpatient-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Inpatient Container */
 .inpatient-container {
   width: 80%;
   margin: 0 auto;
   padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.inpatient-title {
-  text-align: center;
-  color: #333;
-}
-
+/* Accordion Styling */
 .inpatient-accordion-toggle {
   display: none;
 }
@@ -642,7 +661,7 @@ button.search-btn i {
   width: 100%;
   display: block;
   text-align: left;
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 10px;
   border-radius: 4px;
   transition: 0.4s;
@@ -668,6 +687,9 @@ button.search-btn i {
 }
 
 .inpatient-accordion-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   max-height: 0;
   overflow: hidden;
   background-color: white;
@@ -681,18 +703,56 @@ button.search-btn i {
   padding: 18px;
 }
 
+/* Image Styling */
 .inpatient-accordion-content img {
-  width: 100%;
+  width: 40%; /* Gambar akan mengambil 40% dari lebar */
   height: auto;
   margin-bottom: 10px;
+  border-radius: 10px;
 }
 
+/* Information Section */
+.inpatient-accordion-content .inpatient-info {
+  width: 55%; /* Informasi akan mengambil 55% dari lebar */
+  margin-left: 20px;
+}
+
+/* List Styling */
 .inpatient-accordion-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.inpatient-accordion-content ul li {
+  margin: 5px 0;
+}
+
+/* Accordion for Each Section */
+.inpatient-section {
+  margin-bottom: 30px;
+}
+
+/* Mengatur tata letak gambar di kanan dan deskripsi di kiri */
+.inpatient-accordion-content .inpatient-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.inpatient-accordion-content .inpatient-info img {
+  width: 45%; /* Ukuran gambar dikurangi */
+  height: auto;
+  margin-left: 20px; /* Spasi antara gambar dan daftar */
+}
+
+.inpatient-accordion-content .inpatient-info ul {
+  width: 45%; /* Ukuran daftar */
   list-style-type: none;
   padding: 0;
 }
 
-.inpatient-accordion-content ul li {
+.inpatient-accordion-content .inpatient-info ul li {
   margin: 5px 0;
 }
 
@@ -908,4 +968,119 @@ button.search-btn i {
 
 .misi-list li {
   margin: 5px 0;
+}
+
+/* kelainan penyakit */
+.alphabet-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.alphabet {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.alphabet div {
+  background-color: #e9ecef;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.alphabet div:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Page Title */
+.section-title {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 30px;
+  color: #333;
+}
+
+/* Subtitle */
+.subtitle {
+  text-align: center;
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* gawat darurat */
+.gawat-darurat-container {
+  padding: 20px;
+}
+
+.gawat-darurat-header-section {
+  position: relative;
+  text-align: center;
+}
+
+.gawat-darurat-header-section img {
+  width: 70%; /* Ukuran gambar diperkecil menjadi 70% */
+  border-radius: 10px;
+  margin: 0 auto; /* Agar gambar berada di tengah */
+  display: block; /* Memastikan gambar menjadi elemen blok */
+}
+
+.gawat-darurat-header-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  color: red;
+  text-align: center;
+}
+
+.gawat-darurat-header-text h1 {
+  font-size: 2.5rem;
+}
+
+.gawat-darurat-header-text h2 {
+  font-size: 2rem;
+}
+
+.gawat-darurat-content-section {
+  margin-top: 30px;
+  line-height: 1.8;
+}
+
+.gawat-darurat-content-section h3,
+.gawat-darurat-content-section h4 {
+  color: #333;
+}
+
+.gawat-darurat-content-section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.gawat-darurat-gallery-section {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.gawat-darurat-gallery-section h3 {
+  font-size: 1.8rem;
+}
+
+.gawat-darurat-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gawat-darurat-gallery img {
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
 }
