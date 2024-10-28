@@ -1084,3 +1084,399 @@ h1.inpatient-title {
   height: auto;
   border-radius: 10px;
 }
+/* edukasi visual */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  width: 25%;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.sidebar input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.sidebar h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  padding: 5px 0;
+  font-size: 16px;
+}
+
+.content {
+  width: 75%;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.card h2 {
+  font-size: 20px;
+  color: #333;
+  margin-top: 15px;
+}
+
+.card p {
+  color: #666;
+  margin-top: 5px;
+}
+
+.card button {
+  background-color: #ff5722;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.card button:hover {
+  background-color: #e64a19;
+}
+/* radiologi */
+/* Header styling */
+.header {
+  background-image: url('path/to/header-image.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 50px;
+  color: #FF5733; /* Adjust color if needed */
+}
+
+.header h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.header h2 {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Description styling */
+.description {
+  padding: 20px;
+  color: #333;
+}
+
+.description p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+/* Services Section */
+.services {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.service-item {
+  background-color: #0056b3;
+  margin: 10px 0;
+  padding: 15px;
+  cursor: pointer;
+}
+
+/* Gallery styling */
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.gallery h3 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+/* medikal check up */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+.header {
+  text-align: center;
+  background: url('path/to/header-image.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.header-image h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.header-image h2 {
+  font-size: 32px;
+  color: #ff5c5c;
+}
+
+.description, .technology, .service, .additional-info, .gallery {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px 20px;
+}
+
+.description h3, .technology h3, .service h3, .additional-info h3, .gallery h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.description p, .technology p, .service p, .additional-info p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.technology ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.technology li {
+  margin-bottom: 15px;
+}
+
+.service p {
+  font-size: 16px;
+  color: #444;
+}
+
+.additional-info ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact p {
+  font-size: 16px;
+  color: #333;
+}
+
+.gallery {
+  text-align: center;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  width: 200px;
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 8px;
+}
+
+.gallery-item p {
+  font-size: 14px;
+  color: #555;
+}
+/* poliklinik */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+.clinic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.clinic-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 200px;
+}
+
+.clinic-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.clinic-card .title {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.consent-section {
+  margin-top: 40px;
+}
+
+.consent-box {
+  background-color: #f0f4ff;
+  border: 1px solid #e0e7f8;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.consent-box h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.consent-box p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.consent-box ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.consent-box ul li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.consent-box ul li:before {
+  content: "• ";
+  color: #007bff;
+}
+/* bicara sehat */
+.bulletin-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.bulletin-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bulletin-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.bulletin-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bulletin-content h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.bulletin-content .bulletin-date {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.bulletin-details {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.bulletin-details li {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.download-button {
+  background-color: #ff4500;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.download-button:hover {
+  background-color: #ff5722;
+}
+
+.download-count {
+  font-size: 0.8rem;
+  color: #666;
+  text-align: right;
+  margin-top: 10px;
+}

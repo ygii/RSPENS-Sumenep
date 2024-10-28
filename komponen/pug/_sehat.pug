@@ -1,0 +1,12 @@
+mixin bulletinCard(title, date, description, downloadCount, link)
+  .bulletin-card
+    img(src='image.jpg', alt='Deskripsi gambar')
+    .bulletin-content
+      h3= title
+      p.bulletin-date= date
+      ul.bulletin-details
+        each detail in description
+          li= detail
+      a.download-button(href=link, target="_blank") Download Buletin
+      p.download-count Total download: #{downloadCount}
+    p &copy; 2024 RSUI - Semua hak cipta dilindungi

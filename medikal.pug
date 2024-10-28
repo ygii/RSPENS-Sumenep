@@ -1,0 +1,27 @@
+extends komponen/pug/_template.pug
+block content
+  +headerSection("Selamat Datang Di", "Medical Check Up")
+
+  section.description
+    h3 Deskripsi
+    p Gaya hidup modern dan faktor genetik yang tidak dapat dihindari berdampak pada kesehatan. Pemeriksaan kesehatan berkala sangat dianjurkan untuk mencegah penyakit yang memerlukan perawatan medis yang lebih lanjut.
+
+  section.technology
+    h3 Teknologi Medis Terkini
+    ul
+      +technologyItem("High Definition Magnetic Resonance Imaging (MRI) 3 Tesla Skyra", "MRI ini memiliki resolusi tinggi yang memberikan gambar berkualitas tinggi dalam waktu yang singkat.")
+      +technologyItem("CT Scan Flash dengan Dual Source", "CT scan flash memungkinkan pemeriksaan yang lebih cepat dan akurat untuk berbagai keperluan medis.")
+      +technologyItem("Body Mass Composition Analyzer", "Perangkat ini memberikan informasi rinci mengenai berat badan, massa otot, serta komposisi tubuh lainnya.")
+
+  section.service
+    h3 One Stop Service
+    p Untuk kenyamanan Anda, kami menyediakan layanan One Stop Service yang memudahkan pemeriksaan dengan peralatan terkini.
+
+  +additionalInfo("Lihat pilihan paket-paket MCU dapat Klik Disini", "Untuk informasi dan pendaftaran dapat menghubungi:", "0321-665432", "medical@rsu.com")
+
+  section.gallery
+    h3 Galeri
+    .gallery-container
+      +galleryItem("path/to/image1.jpg", "3 Tesla MRI")
+      +galleryItem("path/to/image2.jpg", "Unit EKG dan USG")
+      +galleryItem("path/to/image3.jpg", "Laboratorium MCU")

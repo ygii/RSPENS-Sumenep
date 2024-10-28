@@ -1,0 +1,29 @@
+// Mixin Header
+mixin headerSection(title, subtitle)
+  section.header
+    .header-image
+      h1= title
+      h2= subtitle
+
+// Mixin untuk Item Teknologi Medis
+mixin technologyItem(title, description)
+  li
+    h4= title
+    p= description
+
+// Mixin untuk Informasi Tambahan
+mixin additionalInfo(linkText1, linkText2, phone, email)
+  section.additional-info
+    h3 Informasi Tambahan
+    ul
+      li: a(href="#")= linkText1
+      li: a(href="#")= linkText2
+    .contact
+      p 📞= phone
+      p 📧 Email: #{email}
+
+// Mixin untuk Item Galeri
+mixin galleryItem(src, alt)
+  .gallery-item
+    img(src=src, alt=alt)
+    p= alt

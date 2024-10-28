@@ -1,0 +1,18 @@
+
+extends komponen/pug/_template.pug
+
+block content
+  h1 Bicara Sehat RSPENS
+  section.bulletin-section
+    h2 Bicara Sehat Terbaru
+
+    .bulletin-grid
+      +bulletinCard('Bicara Sehat 9 (September 2024)', '13-09-2024', ['Fokus utama Senyum Menawan', 'Layanan Mulut dan Gigi'], 124, '#')
+      +bulletinCard('Bicara Sehat 8 (April 2024)', '27-05-2024', ['Tips Persiapan Anak Sebelum dan Sesudah Operasi', 'Bedah Estetik'], 163, '#')
+      +bulletinCard('Bicara Sehat 7 (Desember 2023)', '29-12-2023', ['Persiapkan Bahagiamu'], 172, '#')
+      +bulletinCard('Bicara Sehat 6 (Agustus 2023)', '31-08-2023', ['Benarkah Steroid Dapat Menyebabkan', 'Gagal Napas'], 476, '#')
+      +bulletinCard('Bicara Sehat 5 (April 2023)', '28-04-2023', ['Waspada Stroke di Usia Muda'], 550, '#')
+      +bulletinCard('Bicara Sehat 4 (Desember 2022)', '29-12-2022', ['Hidup Sehat dengan Diabetes'], 500, '#')
+
+  footer
+    p &copy; 2024 RSPENS - Semua hak cipta dilindungi
