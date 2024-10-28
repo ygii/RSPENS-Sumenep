@@ -1155,17 +1155,3 @@ h1.inpatient-title {
   color: #666;
   margin-top: 5px;
 }
-
-.card button {
-  background-color: #ff5722;
-  color: #fff;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 15px;
-}
-
-.card button:hover {
-  background-color: #e64a19;
-}
