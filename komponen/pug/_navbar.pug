@@ -1,0 +1,54 @@
+mixin navbar
+   .navbar
+
+    .navbar
+    //- Logo and Contact (link to homepage)
+    .navbar-logo
+      a(href="index.html")
+        img(src="komponen/assets/img/Logo_PENS.png", alt="RSUI Logo")
+
+    .navbar-menu
+
+      .dropdown
+        a(href="#", class="dropbtn") PASIEN & PENGUNJUNG
+        .dropdown-content
+          a(href="doctorSearch.html") Cari Dokter
+          a(href="locationGuidance.html") Petunjuk Lokasi
+          a(href="admissionConsent.html") Admisi
+          a(href="rawatinap.html") Rawat Inap
+          a(href="ketersediantempat.html") Ketersediaan Tempat Tidur
+          a(href="faq.html") FAQ
+
+      .dropdown
+        a(href="#", class="dropbtn") LAYANAN
+        .dropdown-content
+          a(href="#") Poli Klinik
+          a(href="gawatDarurat.html") Gawat Darurat
+          a(href="labo.html") Laboratorium
+          a(href="#") Medical Checkup
+          a(href="#") Radiologi
+
+      .dropdown
+        a(href="#", class="dropbtn") BERITA & ARTIKEL KESEHATAN
+        .dropdown-content
+          a(href="Alphabet.html") Kelainan Penyakit
+          a(href="#") Artikel Populer
+          a(href="#") Edukasi Visual
+          a(href="#") Bicara Sehat
+          a(href="#") Berita
+          a(href="#") Video
+          a(href="VisiMisi.html") Visi & Misi
+
+    .navbar-actions
+      a(href="#", class="navbar-login") LOGIN
+
+// Usage in a Pug document
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title RSUI Navbar
+    
+  body
+    +navbar
