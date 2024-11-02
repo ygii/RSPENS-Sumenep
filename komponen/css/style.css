@@ -624,7 +624,6 @@ button.search-btn i {
 }
 
 /* rawat inap */
-/* General Styling */
 body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
@@ -688,72 +687,52 @@ h1.inpatient-title {
 
 .inpatient-accordion-content {
   display: flex;
-  justify-content: space-between;
+  gap: 10px; /* Reduced gap for closer layout */
   align-items: flex-start;
   max-height: 0;
   overflow: hidden;
   background-color: white;
   transition: max-height 0.2s ease-out;
   margin-bottom: 10px;
-  padding: 0 18px;
+  padding: 0 10px; /* Reduced padding for compactness */
 }
 
 .inpatient-accordion-toggle:checked ~ .inpatient-accordion-content {
   max-height: 500px;
-  padding: 18px;
+  padding: 10px;
 }
 
-/* Image Styling */
-.inpatient-accordion-content img {
-  width: 40%; /* Gambar akan mengambil 40% dari lebar */
+/* Image Container Styling */
+.image-container {
+  width: 45%; /* Reduced width for better alignment with text */
+}
+
+.image-container img {
+  width: 100%; /* Ensure images take full width of container */
   height: auto;
-  margin-bottom: 10px;
   border-radius: 10px;
 }
 
 /* Information Section */
-.inpatient-accordion-content .inpatient-info {
-  width: 55%; /* Informasi akan mengambil 55% dari lebar */
-  margin-left: 20px;
+.inpatient-info {
+  width: 50%; /* Adjusted width to balance with image container */
+  padding-left: 5px; /* Reduced padding for closer alignment */
 }
 
 /* List Styling */
-.inpatient-accordion-content ul {
+.facilities-list {
   list-style-type: disc;
-  padding-left: 20px;
+  padding-left: 15px;
   margin: 0;
 }
 
-.inpatient-accordion-content ul li {
+.facility-item {
   margin: 5px 0;
 }
 
 /* Accordion for Each Section */
 .inpatient-section {
   margin-bottom: 30px;
-}
-
-/* Mengatur tata letak gambar di kanan dan deskripsi di kiri */
-.inpatient-accordion-content .inpatient-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.inpatient-accordion-content .inpatient-info img {
-  width: 45%; /* Ukuran gambar dikurangi */
-  height: auto;
-  margin-left: 20px; /* Spasi antara gambar dan daftar */
-}
-
-.inpatient-accordion-content .inpatient-info ul {
-  width: 45%; /* Ukuran daftar */
-  list-style-type: none;
-  padding: 0;
-}
-
-.inpatient-accordion-content .inpatient-info ul li {
-  margin: 5px 0;
 }
 
 /* ketersedian tempat tidur */
@@ -1189,7 +1168,7 @@ h1.inpatient-title {
   position: relative;
   overflow: hidden;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .gallery-image {
