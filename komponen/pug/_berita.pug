@@ -1,0 +1,8 @@
+mixin newsCard(image, date, title, description, link)
+  .news-card
+    .news-image(style=`background-image: url('${image}')`)
+    .news-content
+      .news-date= date
+      .news-title= title
+      .news-description= description
+      a.news-link(href=link) Selengkapnya

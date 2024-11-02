@@ -1,29 +1,41 @@
-mixin labPage
-  .lab-container
-    .header
-      h1 Selamat Datang Di
-      h2 Laboratorium
+ mixin labSection(title, id, content)
+    .lab-section
+      input.lab-accordion-toggle(
+        type="checkbox"
+        id=id
+      )
+      label.lab-accordion-label(
+        for=id
+      )= title
+      .lab-accordion-content
+        if content.deskripsi && content.deskripsi.length
+          ul.lab-list
+            each item in content.deskripsi
+              li.lab-item= item
 
-    .description
-      p Lab description text goes here...
+  //- Konten Utama
+  .laboratorium-container
+    .hero-section
+      h1.hero-title Selamat Datang Di
+      h2.hero-subtitle Laboratorium
 
-    .facility-section
-      h3 Laboratorium Mikrobiologi Klinik
-      ul.facility-list
-        li Pemeriksaan Pewarnaan Gram
-        li Pemeriksaan Pewarnaan AFB
-        li Pemeriksaan Kultur Mikroba
+    //- Deskripsi
+    .description-section
+      h3.section-title Deskripsi
+      p.description-text Laboratorium RS ABC memiliki beberapa laboratorium spesialis yang dilengkapi dengan peralatan modern dan tenaga ahli yang berpengalaman...
 
-    .accordion
-      each item in ['Laboratorium Mikrobiologi Klinik', 'Laboratorium Mikrobiologi Dasar', 'Laboratorium Mikrobiologi Lanjut', 'Laboratorium Mikrobiologi Industri']
-        .accordion-item
-          input(type="checkbox" id=item name="accordion")
-          label(for=item)= item
-          .accordion-content
-            p Details for #{item}...
+    //- Daftar Laboratorium
+    .lab-sections
+      each data, nama in dataLab
+        +labSection(nama, data.id, data)
 
-    .gallery
-      h3 Galeri
-      .gallery-images
-        each img in ['image1.jpg', 'image2.jpg', 'image3.jpg']
-          img(src=`/path/to/${img}`, alt='Lab Image')
+    //- Galeri
+    .gallery-section
+      h3.section-title Galeri
+      .gallery-container
+        each item, index in dataGaleri
+          .gallery-item
+            img.gallery-image(
+              src=item.gambar
+              alt=item.alt
+            )
