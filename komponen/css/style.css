@@ -716,7 +716,7 @@ h1.inpatient-title {
 /* Information Section */
 .inpatient-info {
   width: 50%; /* Adjusted width to balance with image container */
-  padding-left: 5px; /* Reduced padding for closer alignment */
+  padding-left: 5 px; /* Reduced padding for closer alignment */
 }
 
 /* List Styling */
