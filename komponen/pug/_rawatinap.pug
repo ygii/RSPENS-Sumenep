@@ -8,7 +8,7 @@ mixin inpatientSection(jenisKamar, id, konten)
       for=id
     )= jenisKamar
     .inpatient-accordion-content
-      //- Bagian Gambar
+ 
       if konten.images && konten.images.type === 'images'
         .image-container
           each gambar in konten.images.sources
@@ -17,7 +17,7 @@ mixin inpatientSection(jenisKamar, id, konten)
               alt=konten.images.alt || 'Gambar Kamar'
             )
       
-      //- Bagian Daftar Fasilitas
+
       if konten.list && konten.list.type === 'list'
         ul.facilities-list
           each fasilitas in konten.list.items
