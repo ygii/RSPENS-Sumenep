@@ -1,0 +1,33 @@
+extends komponen/pug/_template.pug
+
+block content
+  //- Description Section
+  .description
+    h2 Deskripsi
+    p
+      | Laboratorium RSUI merupakan layanan laboratorium terpadu sehingga memiliki laboratorium patologi klinik, 
+      | patologi anatomi, mikrobiologi, parasitologi, biomolekuler, dan bank darah. ... (content shortened)
+
+  //- Navigation Section
+  .navigation
+    ul.nav-list
+      li.nav-item: a(href='#') Laboratorium Patologi Klinik
+      li.nav-item: a(href='#') Laboratorium Patologi Anatomi
+      li.nav-item: a(href='#') Laboratorium Mikrobiologi Klinik
+      li.nav-item: a(href='#') Laboratorium Biomolekuler
+      li.nav-item: a(href='#') Laboratorium Parasitologi
+      li.nav-item: a(href='#') Laboratorium Darah
+
+  //- Gallery Section
+  .gallery
+    h2 Galeri
+    .gallery-images
+      .gallery-item
+        img(src='path/to/lab-image1.jpg' alt='Laboratorium 1')
+        p Laboratorium 1
+      .gallery-item
+        img(src='path/to/lab-image2.jpg' alt='Laboratorium 2')
+        p Laboratorium 2
+      .gallery-item
+        img(src='path/to/lab-image3.jpg' alt='Laboratorium 3')
+        p Laboratorium 3

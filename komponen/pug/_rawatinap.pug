@@ -1,11 +1,24 @@
-mixin inpatientSection(title, id, content)
-  input.inpatient-accordion-toggle(type="checkbox", id=id)
-  label.inpatient-accordion-label(for=id) #{title}
-  .inpatient-accordion-content
-    if content.images && content.images.type === 'images'
-      each imgSrc in content.images.sources
-        img(src=imgSrc, alt=content.images.alt)
-    if content.list && content.list.type === 'list'
-      ul
-        each item in content.list.items
-          li= item
+mixin inpatientSection(jenisKamar, id, konten)
+  .inpatient-accordion
+    input.inpatient-accordion-toggle(
+      type="checkbox"
+      id=id
+    )
+    label.inpatient-accordion-label(
+      for=id
+    )= jenisKamar
+    .inpatient-accordion-content
+ 
+      if konten.images && konten.images.type === 'images'
+        .image-container
+          each gambar in konten.images.sources
+            img.room-image(
+              src=gambar
+              alt=konten.images.alt || 'Gambar Kamar'
+            )
+      
+
+      if konten.list && konten.list.type === 'list'
+        ul.facilities-list
+          each fasilitas in konten.list.items
+            li.facility-item= fasilitas
