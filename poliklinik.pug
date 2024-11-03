@@ -1,0 +1,26 @@
+extends komponen/pug/_template.pug
+
+block content
+  h1.heading-poli Poli Klinik
+  .clinic-container
+    - 
+      const clinics = [
+        { imageUrl: "komponen/assets/img/Logo_PENS.png", title: "RSPENS", subtitle: "KLINIK AKUPUNTUR" },
+        { imageUrl: "komponen/assets/img/Logo_PENS.png", title: "RSPENS", subtitle: "KLINIK ANAK" },
+        { imageUrl: "komponen/assets/img/Logo_PENS.png", title: "RSPENS", subtitle: "KLINIK ANASTESI" },
+        { imageUrl: "komponen/assets/img/Logo_PENS.png", title: "RSPENS", subtitle: "KLINIK BEDAH" },
+        { imageUrl: "komponen/assets/img/Logo_PENS.png", title: "RSPENS", subtitle: "KLINIK BEDAH SARAF" },
+        { imageUrl: "komponen/assets/img/Logo_PENS.png", title: "RSPENS", subtitle: "KLINIK FARMAKOLOGI" },
+        { imageUrl: "komponen/assets/img/Logo_PENS.png", title: "RSPENS", subtitle: "KLINIK FORENSIK" },
+        { imageUrl: "komponen/assets/img/Logo_PENS.png", title: "RSPENS", subtitle: "KLINIK GIGI" },
+        { imageUrl: "komponen/assets/img/Logo_PENS.png", title: "RSPENS", subtitle: "KLINIK GIZI" },
+        { imageUrl: "komponen/assets/img/Logo_PENS.png", title: "RSPENS", subtitle: "KLINIK JIWA (PESIKIATRI)" },
+        { imageUrl: "komponen/assets/img/Logo_PENS.png", title: "RSPENS", subtitle: "KLINIK OLAHRAGA" },
+        { imageUrl: "komponen/assets/img/Logo_PENS.png", title: "RSPENS", subtitle: "KLINIK KULIT DAN KELAMIN" },
+        { imageUrl: "komponen/assets/img/Logo_PENS.png", title: "RSPENS", subtitle: "KLINIK NYERI" },
+        { imageUrl: "komponen/assets/img/Logo_PENS.png", title: "RSPENS", subtitle: "KLINIK SARAF" },
+        { imageUrl: "komponen/assets/img/Logo_PENS.png", title: "RSPENS", subtitle: "KLINIK UMUM" }
+      ]
+
+    each clinic in clinics
+      +clinicCard(clinic.imageUrl, clinic.title, clinic.subtitle)

@@ -1,0 +1,11 @@
+mixin healthEducationSection(title, imgSrc, imgAlt, description, downloadLink)
+  .education-section
+    img(src=imgSrc, alt=imgAlt, width="600", height="400")
+    p= description
+    a.download-btn(href=downloadLink) Download
+
+mixin healthEducation(sections)
+  .education-container
+    .education-title Edukasi Visual
+    each section in sections
+      +healthEducationSection(section.title, section.imgSrc, section.imgAlt, section.description, section.downloadLink)

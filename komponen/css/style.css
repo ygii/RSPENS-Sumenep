@@ -1200,12 +1200,17 @@ h1.inpatient-title {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }
+
 /* berita */
 .news-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  row-gap: 20px;
   padding: 20px;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .news-card {
@@ -1217,12 +1222,16 @@ h1.inpatient-title {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
+  max-width: 500px;
+  height: 400px;
+  margin: 0 auto;
 }
 
 .news-image {
   background-size: cover;
   background-position: center;
-  height: 200px;
+  height: 50%;
 }
 
 .news-content {
@@ -1230,6 +1239,7 @@ h1.inpatient-title {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  flex-grow: 1;
 }
 
 .news-date {
@@ -1246,11 +1256,12 @@ h1.inpatient-title {
 .news-description {
   font-size: 16px;
   color: #555555;
+  flex-grow: 1;
 }
 
 .news-link {
   align-self: flex-start;
-  margin-top: 10px;
+  margin-top: auto;
   padding: 8px 16px;
   background-color: #007bff;
   color: #ffffff;
@@ -1262,4 +1273,115 @@ h1.inpatient-title {
 
 .news-link:hover {
   background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Edukasi visual */
+.body-poli-clinic {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.education-container {
+  width: 40%; /* Reduced width for smaller display */
+  margin: 20px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.education-title {
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.education-section {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.education-section img {
+  width: 100%;
+  height: auto;
+}
+
+.education-section p {
+  font-size: 14px; /* Reduced font size */
+  line-height: 1.6;
+  color: #333333;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px; /* Reduced padding */
+  background-color: #007bff;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 12px; /* Reduced font size */
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
+
+/* poli klinik */
+.body-poli-clinic {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.heading-poli {
+  color: #3b5998;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+.clinic-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-content: center;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.clinic-card {
+  background-color: #b0b0b0;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.clinic-card img {
+  width: 30px;
+  height: 30px;
+}
+
+.clinic-card .card-title {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.clinic-card .card-subtitle {
+  margin-top: 5px;
 }
