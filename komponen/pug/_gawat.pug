@@ -1,0 +1,27 @@
+// Mixin untuk header gambar dan teks
+mixin headerImage(src, alt, text)
+  .header-image
+    img(src=src, alt=alt)
+    .header-text= text
+
+// Mixin untuk konten deskripsi
+mixin contentSection(title, paragraphs)
+  .content
+    h2= title
+    each para in paragraphs
+      p= para
+
+// Mixin untuk daftar layanan
+mixin servicesList(title, items)
+  h2= title
+  ul
+    each item in items
+      li= item
+
+// Mixin untuk galeri gambar
+mixin gallerySection(title, images)
+  .gallery
+    h2= title
+    .gallery-images
+      each image in images
+        img(src=image.src, alt=image.alt)

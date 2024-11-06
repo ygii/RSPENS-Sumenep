@@ -1628,94 +1628,175 @@ h1.inpatient-title {
 }
 /*laboratorium*/
 
-.page-container {
+.content-container {
   width: 80%;
   margin: 0 auto;
   padding: 20px;
   background-color: #fff;
 }
 
-.breadcrumb-nav {
+.breadcrumb-section {
   font-size: 14px;
   color: #888;
   margin-bottom: 20px;
 }
 
-.breadcrumb-nav a {
+.breadcrumb-section a {
   color: #888;
   text-decoration: none;
 }
 
-.breadcrumb-nav a:hover {
+.breadcrumb-section a:hover {
   text-decoration: underline;
 }
 
-.image-section {
-  position: relative;
-  width: 100%;
-  border-radius: 10px;
-  overflow: hidden;
+.image-wrapper {
+  text-align: center;
   margin-bottom: 20px;
 }
 
-.image-section img {
+.image-wrapper img {
   width: 100%;
-  height: auto;
+  max-width: 600px;
+  border-radius: 10px;
 }
 
-.image-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.image-caption {
+  position: relative;
+  top: -250px;
   color: red;
   font-size: 24px;
   font-weight: bold;
 }
 
-.lab-description {
+.lab-details {
   margin-bottom: 20px;
 }
 
-.description-title {
+.section-title {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-.sub-title {
+.sub-section-title {
   font-size: 20px;
   margin-bottom: 10px;
 }
 
-.text {
+.description-text {
   font-size: 16px;
   line-height: 1.6;
   color: #333;
 }
 
-.lab-services {
-  list-style-type: none;
-  padding: 0;
+.lab-list {
+  list-style-type: disc;
+  padding-left: 20px;
 }
 
-.lab-services li {
-  font-size: 16px;
-  color: #333;
+.lab-list li {
   margin-bottom: 5px;
 }
 
-.lab-gallery {
-  margin-top: 20px;
+.gallery-section {
+  text-align: center;
+  margin-top: 40px;
 }
 
 .gallery-title {
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.gallery-images img {
+  width: 30%;
+  margin: 0 1.5%;
+  border-radius: 10px;
+}
+/* gawat darurat */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.breadcrumb a {
+  color: #666;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.header-image {
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.header-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ff0000;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.content p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.content ul li {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.gallery h2 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
 }
 
 .gallery-images {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .gallery-images img {
