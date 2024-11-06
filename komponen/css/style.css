@@ -1656,8 +1656,7 @@ h1.inpatient-title {
 }
 
 .image-wrapper img {
-  width: 100%;
-  max-width: 600px;
+  width: 100%; /* Mengisi seluruh lebar container */
   border-radius: 10px;
 }
 
@@ -1712,94 +1711,5 @@ h1.inpatient-title {
   width: 30%;
   margin: 0 1.5%;
   border-radius: 10px;
-}
-/* gawat darurat */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
-}
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-}
-
-.breadcrumb {
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 20px;
-}
-
-.breadcrumb a {
-  color: #666;
-  text-decoration: none;
-}
-
-.breadcrumb a:hover {
-  text-decoration: underline;
-}
-
-.header-image {
-  width: 100%;
-  border-radius: 10px;
-  position: relative;
-}
-
-.header-image img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.header-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ff0000;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-}
-
-.content h2 {
-  font-size: 24px;
-  color: #333;
-}
-
-.content p {
-  font-size: 16px;
-  color: #333;
-  line-height: 1.6;
-}
-
-.content ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.content ul li {
-  font-size: 16px;
-  color: #333;
-  line-height: 1.6;
-}
-
-.gallery h2 {
-  font-size: 24px;
-  color: #333;
-  text-align: center;
-}
-
-.gallery-images {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.gallery-images img {
-  width: 32%;
-  border-radius: 10px;
 }
