@@ -1626,3 +1626,93 @@ h1.inpatient-title {
   width: 200px;
   height: auto;
 }
+/*laboratorium*/
+.page-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.breadcrumb-nav {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.breadcrumb-nav a {
+  color: #888;
+  text-decoration: none;
+}
+
+.breadcrumb-nav a:hover {
+  text-decoration: underline;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.lab-description {
+  margin-bottom: 20px;
+}
+
+.lab-description h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.lab-description p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.lab-description ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.lab-description ul li {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.lab-gallery {
+  margin-top: 20px;
+}
+
+.lab-gallery h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.gallery-images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery-images img {
+  width: 32%;
+  border-radius: 10px;
+}
