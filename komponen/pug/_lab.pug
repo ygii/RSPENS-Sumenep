@@ -6,33 +6,33 @@ mixin breadcrumb
     |  /
     a(href="#") Layanan
     |  / Laboratorium
-    //- components/pug/_mainImage.pug
+//- components/pug/_mainImage.pug
 
 mixin mainImage(imageSrc, altText)
-  .image-container
+  .image-section
     img(src=imageSrc, alt=altText, width="800", height="400")
     .image-overlay Laboratorium
-    //- components/pug/_description.pug
+//- components/pug/_description.pug
 
 mixin description
   .lab-description
-    h2 Deskripsi
-    h3 Pelayanan
-    p Laboratorium ini menerapkan konsep laboratorium terpadu, sehingga memiliki laboratorium penunjang klinik seperti anatomi, histologi, patologi, mikrobiologi, biokimia, dan darah. Dengan adanya laboratorium ini, maka diharapkan pelayanan kesehatan dapat dilakukan secara komprehensif baik dari segi diagnostik maupun terapeutik.
-    p Laboratorium ini juga terintegrasi dengan sistem komputerisasi untuk pengelolaan data, sehingga pengolahan data menjadi lebih cepat dan akurat. Selain itu, laboratorium ini juga memiliki pelayanan konsultasi, baik untuk pasien maupun tenaga medis lainnya.
-    p Laboratorium ini dilengkapi dengan peralatan yang canggih dan modern, serta didukung oleh tenaga ahli yang profesional di bidangnya. Dengan demikian, laboratorium ini dapat memberikan pelayanan yang optimal dan berkualitas tinggi.
-    ul
+    h2.description-title Deskripsi
+    h3.sub-title Pelayanan
+    p.text Laboratorium ini menerapkan konsep laboratorium terpadu, sehingga memiliki laboratorium penunjang klinik seperti anatomi, histologi, patologi, mikrobiologi, biokimia, dan darah. Dengan adanya laboratorium ini, maka diharapkan pelayanan kesehatan dapat dilakukan secara komprehensif baik dari segi diagnostik maupun terapeutik.
+    p.text Laboratorium ini juga terintegrasi dengan sistem komputerisasi untuk pengelolaan data, sehingga pengolahan data menjadi lebih cepat dan akurat. Selain itu, laboratorium ini juga memiliki pelayanan konsultasi, baik untuk pasien maupun tenaga medis lainnya.
+    p.text Laboratorium ini dilengkapi dengan peralatan yang canggih dan modern, serta didukung oleh tenaga ahli yang profesional di bidangnya. Dengan demikian, laboratorium ini dapat memberikan pelayanan yang optimal dan berkualitas tinggi.
+    ul.lab-services
       li Laboratorium Patologi Klinik
       li Laboratorium Patologi Anatomi
       li Laboratorium Mikrobiologi
       li Laboratorium Biokimia
       li Laboratorium Parasitologi
       li Laboratorium Darah
-      //- components/pug/_gallery.pug
+//- components/pug/_gallery.pug
 
 mixin gallery
   .lab-gallery
-    h2 GALERI
+    h2.gallery-title GALERI
     .gallery-images
       img(src="https://storage.googleapis.com/a1aa/image/6Lh17wQnFgYTEps9xVsDroAO8KhVQTAbkUcXSCyrNSCpYj7E.jpg", alt="Laboratory with various medical equipment", width="200", height="150")
       img(src="https://storage.googleapis.com/a1aa/image/LVvnWjiWRl4ELlHFMhFe1f7wMxl7zSwupuaDFjRRGAOmiNuTA.jpg", alt="Laboratory with microscopes and computers", width="200", height="150")

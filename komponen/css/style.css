@@ -1627,6 +1627,7 @@ h1.inpatient-title {
   height: auto;
 }
 /*laboratorium*/
+
 .page-container {
   width: 80%;
   margin: 0 auto;
@@ -1649,7 +1650,7 @@ h1.inpatient-title {
   text-decoration: underline;
 }
 
-.image-container {
+.image-section {
   position: relative;
   width: 100%;
   border-radius: 10px;
@@ -1657,7 +1658,7 @@ h1.inpatient-title {
   margin-bottom: 20px;
 }
 
-.image-container img {
+.image-section img {
   width: 100%;
   height: auto;
 }
@@ -1676,23 +1677,28 @@ h1.inpatient-title {
   margin-bottom: 20px;
 }
 
-.lab-description h2 {
+.description-title {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-.lab-description p {
+.sub-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.text {
   font-size: 16px;
   line-height: 1.6;
   color: #333;
 }
 
-.lab-description ul {
+.lab-services {
   list-style-type: none;
   padding: 0;
 }
 
-.lab-description ul li {
+.lab-services li {
   font-size: 16px;
   color: #333;
   margin-bottom: 5px;
@@ -1702,7 +1708,7 @@ h1.inpatient-title {
   margin-top: 20px;
 }
 
-.lab-gallery h2 {
+.gallery-title {
   font-size: 24px;
   margin-bottom: 10px;
 }
