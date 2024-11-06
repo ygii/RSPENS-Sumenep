@@ -1,0 +1,53 @@
+extends komponen/pug/_template.pug
+
+block content
+  .page-container
+    .main-section
+      .breadcrumb-path Home / Berita & Artikel Kesehatan / Artikel populer
+
+      //- Calling the articleCard mixin for each article
+      +articleCard(
+        'https://storage.googleapis.com/a1aa/image/oOoSsLeN220ELiLPx9xsLsxfsfHUSZD1SOYzlBkl2Qfpmx4OB.jpg',
+        'Close-up of hands performing acupuncture on a person\'s back',
+        'Yuk, Mengenal Lebih Jauh tentang Layanan Akupunktur',
+        'Akupunktur adalah teknik pengobatan yang melibatkan penusukan jarum ke titik-titik tertentu pada tubuh...',
+        'Selengkapnya'
+      )
+      +articleCard(
+        'https://storage.googleapis.com/a1aa/image/dPY1fUel1spF8kFezlmLoemSf3Tim4ELPmxAapUcrLoiNjxdC.jpg',
+        'Medical professionals analyzing dental radiology images on computer screens',
+        'Layanan Radiologi Dental RSPENS',
+        'Layanan radiologi dental di RSPENS menyediakan berbagai jenis pemeriksaan gigi dan mulut...',
+        'Selengkapnya'
+      )
+      +articleCard(
+        'https://storage.googleapis.com/a1aa/image/uMECVGfcXr32aaU1J5cPk10g3pZzwo7esQOAuRjSPAjtZMuTA.jpg',
+        'Dental equipment for panoramic imaging of teeth',
+        'Memantau Pertumbuhan Gigi Si Kecil dengan Pemeriksaan Panoramik Digital',
+        'Pemeriksaan panoramik digital adalah metode yang efektif untuk memantau pertumbuhan gigi anak...',
+        'Selengkapnya'
+      )
+
+    //- Calling the sidebar mixin with a list of other articles
+    +sidebar([
+      'Manfaat Yoga untuk Kesehatan',
+      'Tips Menjaga Kesehatan Jantung',
+      'Kenali Gejala Diabetes Sejak Dini',
+      'Manfaat Berjemur di Pagi Hari',
+      'Tips Pola Makan Sehat',
+      'Olahraga Ringan di Rumah',
+      'Manfaat Minum Air Putih',
+      'Tips Mengatasi Stres',
+      'Manfaat Tidur yang Cukup',
+      'Kenali Gejala Hipertensi',
+      'Manfaat Buah dan Sayur',
+      'Tips Menjaga Berat Badan Ideal',
+      'Manfaat Bersepeda',
+      'Kenali Gejala Anemia',
+      'Tips Menjaga Kesehatan Mental',
+      'Manfaat Olahraga Rutin',
+      'Tips Menjaga Kesehatan Mata',
+      'Manfaat Sarapan Pagi',
+      'Kenali Gejala Asam Urat',
+      'Tips Menjaga Kesehatan Kulit'
+    ])

@@ -1,0 +1,8 @@
+//- components/pug/_articleComponent.pug
+
+mixin articleComponent(imageSrc, altText, title, description)
+  .news-section
+    img(src=imageSrc, alt=altText, width="150", height="200")
+    .news-content
+      h2.news-heading= title
+      p.news-paragraph= description

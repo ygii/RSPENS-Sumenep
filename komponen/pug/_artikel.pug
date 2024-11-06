@@ -1,0 +1,16 @@
+//- components/pug/_articleCard.pug
+
+mixin articleCard(imageSrc, altText, title, description, linkText)
+  .card-article
+    img(src=imageSrc, alt=altText, width="600", height="400")
+    h2.card-title= title
+    p.card-description= description
+    a.card-link(href='#')= linkText
+//- components/pug/_sidebar.pug
+
+mixin sidebar(articles)
+  .side-content
+    h3.side-content-title Artikel Lainnya
+    ul.side-list
+      each article in articles
+        li.side-list-item= article
