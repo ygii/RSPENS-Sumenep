@@ -1,0 +1,33 @@
+//- components/pug/_registrationForm.pug
+
+mixin registrationForm
+  .form-wrapper
+    h1.form-title Registrasi
+    label(for="name") Nama Lengkap (Sesuai KTP)
+    input#name(name="name", type="text")
+    
+    label(for="username") Username
+    input#username(name="username", type="text")
+    
+    label(for="email") Email
+    input#email(name="email", type="email")
+    
+    .form-note
+      | Note: Mohon tidak menggunakan email Yahoo dan Hotmail karena sering terjadi kegagalan saat pengiriman email
+    
+    label(for="password") Password (Minimal 8 Karakter)
+    input#password(name="password", type="password")
+    
+    label(for="confirm-password") Ulangi Password
+    input#confirm-password(name="confirm-password", type="password")
+    
+    button.register-button REGISTRASI
+    
+    .login-redirect
+      | Sudah Terdaftar? 
+      a(href="#") Login
+//- components/pug/_imageContainer.pug
+
+mixin imageContainer(imageSrc, altText)
+  .illustration-container
+    img(src=imageSrc, alt=altText, width="200", height="auto")
