@@ -1,0 +1,22 @@
+extends komponen/pug/_template.pug
+
+block content
+  .container
+    .breadcrumb
+      a(href="#") Home
+      | /
+      a(href="#") Layanan
+      | / Radiologi
+
+    +headerImage("https://storage.googleapis.com/a1aa/image/k8KjKhqma7IVHddpAvkMvZkxo2OErrC6XBw00r1eZ2NWXR3JA.jpg", "Radiology Room", "Selamat Datang Di", "Radiologi")
+
+    +description("Deskripsi", "Unit Radiologi RSUPN Sumenep memiliki layanan unggulan dalam bidang neuroradiologi, radiologi abdomen, radiologi muskuloskeletal, serta radiologi intervensi dan kardiovaskular. Unit Radiologi RSU memiliki 5 dokter spesialis radiologi yang memiliki subspesialisasi di bidangnya masing-masing sehingga pelayanan dan pemeriksaan pasien menjadi lebih terarah dan komprehensif.")
+
+    .services
+      +serviceItem("Digital Radiography (DR)", "Yang dapat diaplikasikan sebagai pemeriksaan dasar dan sederhana untuk berbagai organ...", "dr-content")
+      +serviceItem("Digital Mammography", "Merupakan alat pencitraan payudara menggunakan sinar x sebagai alat skrining deteksi kanker payudara.", "mammography-content")
+      +serviceItem("Ultrasonografi", "Dapat diaplikasikan untuk pemeriksaan multi-organ baik organ tubuh dalam maupun organ tubuh luar (superfisial), termasuk juga pemeriksaan ultrasonografi doppler vaskular untuk mendeteksi kelainan pembuluh darah...", "ultrasonography-content")
+      +serviceItem("CT scan 128 slices", "Deskripsi untuk layanan CT Scan 128 slices.", "ctscan-content")
+      +serviceItem("MRI 1.5 Tesla", "Deskripsi untuk layanan MRI 1.5 Tesla.", "mri-content")
+
+    +gallery([{src: "https://storage.googleapis.com/a1aa/image/95IcxdMMxNLRB5wM24Uy6Cpxp2w92ByX7VNUeZXj11euuiuTA.jpg", alt: "CT scan machine"}, {src: "https://storage.googleapis.com/a1aa/image/k8KjKhqma7IVHddpAvkMvZkxo2OErrC6XBw00r1eZ2NWXR3JA.jpg", alt: "Radiology room"}, {src: "https://storage.googleapis.com/a1aa/image/nFSSf6bpETQpTCz2hTJAPrj5hve7Ts9EoPIjhKtD7oWquiuTA.jpg", alt: "MRI machine"}])

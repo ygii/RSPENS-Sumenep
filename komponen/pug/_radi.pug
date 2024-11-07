@@ -1,0 +1,26 @@
+mixin headerImage(imageSrc, altText, mainText, subText)
+  .header
+    img(src=imageSrc alt=altText)
+    h1
+      span= mainText
+      br
+      span= subText
+
+// Mixin for description section
+mixin description(title, text)
+  .description
+    h2= title
+    p= text
+
+// Mixin for services with dropdown content
+mixin serviceItem(title, content, contentId)
+  .service-item(onclick=`toggleContent('${contentId}')`)= title
+  .service-item-content(id=contentId)= content
+
+// Mixin for gallery section
+mixin gallery(images)
+  .gallery
+    h2 GALERI
+    .gallery-images
+      each image in images
+        img(src=image.src alt=image.alt)

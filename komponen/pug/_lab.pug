@@ -1,25 +1,18 @@
-//- components/pug/_breadcrumb.pug
-
 mixin breadcrumb
   .breadcrumb-section
     a(href="#") Home
     |  /
     a(href="#") Layanan
     |  / Laboratorium
-//- components/pug/_mainImage.pug
-
 mixin mainImage(imageSrc, altText)
   .image-wrapper
     img(src=imageSrc, alt=altText, width="600", height="400")
     .image-caption Selamat Datang di Laboratorium
-//- components/pug/_description.pug
-
 mixin description
   .lab-details
     h2.section-title Deskripsi
     h3.sub-section-title Pelayanan
     p.description-text Laboratorium kami menerapkan konsep laboratorium terpadu sehingga memiliki laboratorium patologi klinik, patologi anatomi, mikrobiologi, parasitologi, biokimia/kimia klinik, bank darah, serologi dan imunologi...
-    //- Repeat other paragraphs as needed
     ul.lab-list
       li Laboratorium Patologi Klinik
       li Laboratorium Patologi Anatomi
@@ -27,8 +20,6 @@ mixin description
       li Laboratorium Biokimia/Kimia Klinik
       li Laboratorium Parasitologi
       li Laboratorium Darah
-//- components/pug/_gallery.pug
-
 mixin gallery
   .gallery-section
     h2.gallery-title GALERI
