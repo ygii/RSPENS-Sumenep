@@ -1627,92 +1627,306 @@ h1.inpatient-title {
   height: auto;
 }
 /*laboratorium*/
-.page-container {
+
+.content-container {
   width: 80%;
   margin: 0 auto;
   padding: 20px;
   background-color: #fff;
 }
 
-.breadcrumb-nav {
+.breadcrumb-section {
   font-size: 14px;
   color: #888;
   margin-bottom: 20px;
 }
 
-.breadcrumb-nav a {
+.breadcrumb-section a {
   color: #888;
   text-decoration: none;
 }
 
-.breadcrumb-nav a:hover {
+.breadcrumb-section a:hover {
   text-decoration: underline;
 }
 
-.image-container {
-  position: relative;
-  width: 100%;
-  border-radius: 10px;
-  overflow: hidden;
+.image-wrapper {
+  text-align: center;
   margin-bottom: 20px;
 }
 
-.image-container img {
-  width: 100%;
-  height: auto;
+.image-wrapper img {
+  width: 100%; /* Mengisi seluruh lebar container */
+  border-radius: 10px;
 }
 
-.image-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.image-caption {
+  position: relative;
+  top: -250px;
   color: red;
   font-size: 24px;
   font-weight: bold;
 }
 
-.lab-description {
+.lab-details {
   margin-bottom: 20px;
 }
 
-.lab-description h2 {
+.section-title {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-.lab-description p {
+.sub-section-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.description-text {
   font-size: 16px;
   line-height: 1.6;
   color: #333;
 }
 
-.lab-description ul {
-  list-style-type: none;
-  padding: 0;
+.lab-list {
+  list-style-type: disc;
+  padding-left: 20px;
 }
 
-.lab-description ul li {
-  font-size: 16px;
-  color: #333;
+.lab-list li {
   margin-bottom: 5px;
 }
 
-.lab-gallery {
-  margin-top: 20px;
+.gallery-section {
+  text-align: center;
+  margin-top: 40px;
 }
 
-.lab-gallery h2 {
+.gallery-title {
   font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.gallery-images img {
+  width: 30%;
+  margin: 0 1.5%;
+  border-radius: 10px;
+
+}
+/* raddiologi */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.breadcrumb a {
+  color: #666;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.header img {
+  width: 10000px; /* Ukuran tetap lebar 800px */
+  height: 400px; /* Ukuran tetap tinggi 400px */
+  object-fit: cover; /* Mengisi area tanpa mengubah proporsi */
+  border-radius: 10px;
+  max-width: 100%; /* Responsif di layar lebih kecil */
+}
+
+.header h1 {
+  color: #e74c3c;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+.description h2 {
+  font-size: 18px;
+  color: #333;
+}
+
+.description p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.services {
+  margin-bottom: 20px;
+}
+
+.service-item {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
   margin-bottom: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.service-item-content {
+  display: none;
+  padding: 10px;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #666;
+  background-color: #f5f5f5;
+}
+
+.gallery {
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 .gallery-images {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 15px; /* Menambahkan jarak antar gambar di galeri */
 }
 
 .gallery-images img {
-  width: 32%;
+  width: 20%;
+  height: auto;
   border-radius: 10px;
 }
+.service-item {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-item i {
+  transition: transform 0.3s ease; /* Animasi untuk ikon */
+}
+
+.service-item-content {
+  display: none;
+  padding: 10px;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #666;
+  background-color: #f5f5f5;
+}
+.service-item {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-item i {
+    transition: transform 0.3s ease; /* Animasi rotasi ikon */
+}
+
+.service-item-content {
+    display: none; /* Tersembunyi secara default */
+    padding: 10px;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+    background-color: #f5f5f5;
+}
+/* dropdown */
+.service-item {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.service-item label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.service-item i {
+  transition: transform 0.3s ease; /* Animasi rotasi ikon */
+}
+
+/* Sembunyikan checkbox */
+.toggle-checkbox {
+  display: none;
+}
+
+/* Konten dropdown, tersembunyi secara default */
+.service-item-content {
+  display: none;
+  padding: 10px;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #666;
+  background-color: #f5f5f5;
+}
+
+/* Tampilkan konten dropdown jika checkbox tercentang */
+.toggle-checkbox:checked + label + .service-item-content {
+  display: block;
+}
+
+/* Rotasi ikon ketika konten dropdown terbuka */
+.toggle-checkbox:checked + label i {
+  transform: rotate(180deg);
+}
+
