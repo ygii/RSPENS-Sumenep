@@ -14,9 +14,14 @@ mixin videoItem(videoSrc, title, description)
       .video-description= description
 
 mixin videoGrid
+  - 
+    var videos = [
+      { videoSrc: "https://www.youtube.com/embed/VIDEO_ID_1", title: "Pemulihan Saraf Dapat Lebih Cepat Dengan Transcranial Magnetic Stimulation (TMS)", description: "Pemulihan saraf yang lambat adalah masalah umum, tetapi ada solusi yaitu menggunakan Transcranial Magnetic Stimulation (TMS). Dalam video ini, kami akan membahas bagaimana TMS mengubah cara kita memahami dan memperlakukan gangguan saraf." },
+      { videoSrc: "https://www.youtube.com/embed/VIDEO_ID_2", title: "Pemulihan Saraf Dapat Lebih Cepat Dengan Transcranial Magnetic Stimulation (TMS)", description: "Pemulihan saraf yang lambat adalah masalah umum, tetapi ada solusi yaitu menggunakan Transcranial Magnetic Stimulation (TMS). Dalam video ini, kami akan membahas bagaimana TMS mengubah cara kita memahami dan memperlakukan gangguan saraf." },
+      { videoSrc: "https://www.youtube.com/embed/VIDEO_ID_3", title: "Pemulihan Saraf Dapat Lebih Cepat Dengan Transcranial Magnetic Stimulation (TMS)", description: "Pemulihan saraf yang lambat adalah masalah umum, tetapi ada solusi yaitu menggunakan Transcranial Magnetic Stimulation (TMS). Dalam video ini, kami akan membahas bagaimana TMS mengubah cara kita memahami dan memperlakukan gangguan saraf." },
+      { videoSrc: "https://www.youtube.com/embed/VIDEO_ID_4", title: "Pemulihan Saraf Dapat Lebih Cepat Dengan Transcranial Magnetic Stimulation (TMS)", description: "Pemulihan saraf yang lambat adalah masalah umum, tetapi ada solusi yaitu menggunakan Transcranial Magnetic Stimulation (TMS). Dalam video ini, kami akan membahas bagaimana TMS mengubah cara kita memahami dan memperlakukan gangguan saraf." }
+    ]
+  
   .video-grid-container
-    +videoItem("https://www.youtube.com/embed/VIDEO_ID_1", "Pemulihan Saraf Dapat Lebih Cepat Dengan Transcranial Magnetic Stimulation (TMS)", "Pemulihan saraf yang lambat adalah masalah umum, tetapi ada solusi yaitu menggunakan Transcranial Magnetic Stimulation (TMS). Dalam video ini, kami akan membahas bagaimana TMS mengubah cara kita memahami dan memperlakukan gangguan saraf.")
-    +videoItem("https://www.youtube.com/embed/VIDEO_ID_2", "Pemulihan Saraf Dapat Lebih Cepat Dengan Transcranial Magnetic Stimulation (TMS)", "Pemulihan saraf yang lambat adalah masalah umum, tetapi ada solusi yaitu menggunakan Transcranial Magnetic Stimulation (TMS). Dalam video ini, kami akan membahas bagaimana TMS mengubah cara kita memahami dan memperlakukan gangguan saraf.")
-    +videoItem("https://www.youtube.com/embed/VIDEO_ID_3", "Pemulihan Saraf Dapat Lebih Cepat Dengan Transcranial Magnetic Stimulation (TMS)", "Pemulihan saraf yang lambat adalah masalah umum, tetapi ada solusi yaitu menggunakan Transcranial Magnetic Stimulation (TMS). Dalam video ini, kami akan membahas bagaimana TMS mengubah cara kita memahami dan memperlakukan gangguan saraf.")
-    +videoItem("https://www.youtube.com/embed/VIDEO_ID_4", "Pemulihan Saraf Dapat Lebih Cepat Dengan Transcranial Magnetic Stimulation (TMS)", "Pemulihan saraf yang lambat adalah masalah umum, tetapi ada solusi yaitu menggunakan Transcranial Magnetic Stimulation (TMS). Dalam video ini, kami akan membahas bagaimana TMS mengubah cara kita memahami dan memperlakukan gangguan saraf.")
-//- video
+    each video in videos
+      +videoItem(video.videoSrc, video.title, video.description)
