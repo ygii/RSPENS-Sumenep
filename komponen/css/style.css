@@ -1984,3 +1984,96 @@ h1.inpatient-title {
   height: auto;
   margin: 0 1.5%;
 }
+/*gawat darurat*/
+.emergency-container {
+  padding: 20px;
+}
+
+.breadcrumb-section-emergency {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.breadcrumb-section-emergency a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.breadcrumb-section-emergency a:hover {
+  text-decoration: underline;
+}
+
+.image-wrapper-emergency {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image-wrapper-emergency img {
+  width: 800px;
+  max-width: 600px;
+  height: 400px;
+}
+
+.image-caption-emergency {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+}
+
+.lab-details-emergency {
+  margin-top: 20px;
+}
+
+.section-title-emergency {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.sub-section-title-emergency {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description-text-emergency {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.lab-list-emergency {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.lab-list-emergency li {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.gallery-section-emergency {
+  margin-top: 30px;
+}
+
+.gallery-title-emergency {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.gallery-images-emergency {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.gallery-images-emergency img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
