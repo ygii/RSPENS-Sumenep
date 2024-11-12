@@ -1,35 +1,36 @@
-//- medicalCheckupMixins.pug
+// Mixin untuk Header
+mixin customHeader(imageSrc, mainText, subText)
+  .custom-header
+    img(src=imageSrc alt="Medical equipment in a clean, modern room")
+    h1.custom-header-title
+      span= mainText
+      br
+      span= subText
 
-// Mixin for the header section
-mixin headerSection(imageSrc, headerText)
-  .header-section
-    img(src=imageSrc alt="Medical equipment in a modern medical facility")
-    h1 !{headerText}
+// Mixin untuk Description
+mixin customDescription(title, text)
+  .custom-description
+    h2.custom-description-title= title
+    p.custom-description-text= text
 
-// Mixin for the text content section
-mixin textContent
-  .text-content
-    h2.title Deskripsi
-    p Description of the medical check-up offerings and available services.
-    h2.title High Definition Magnetic Resonance Imaging (MRI) 3 Tesla Skyra
-    p Detailed description of the MRI equipment.
-    h2.title CT-scan Flash with Dual Source
-    p Detailed description of the CT-scan equipment.
-    h2.title Body Mass Composition Analyzer
-    p Detailed description of the body mass analyzer.
-    h2.title One Stop Service
-    p Description of the one-stop service benefits.
-    h2.title Informasi Tambahan
-    p 1. Jumlah pilihan paket MCU dapat disesuaikan.
-    br
-    p 2. Untuk informasi dan pendaftaran, dapat menghubungi:
-    br
-    p - Telephone : (021) 50829224
+// Mixin untuk Section
+mixin customSection(title, text)
+  .custom-section
+    h2.custom-section-title= title
+    p.custom-section-text= text
 
-// Mixin for the image gallery section
-mixin imageGallery
-  .image-gallery
-    h2.title Galeri
-    img(src="https://storage.googleapis.com/a1aa/image/KjFeDv3nGW0eZUmveuJav8Wa0PFf6QpVKyFcVNRiDGmNv6APB.jpg" alt="Medical examination room with modern equipment")
-    img(src="https://storage.googleapis.com/a1aa/image/rze9gLiwgAyCQyouAi5mPAKfcIiyOtVlnACUJVglrwejXdgnA.jpg" alt="Hospital bed in a clean and modern room")
-    img(src="https://storage.googleapis.com/a1aa/image/4suwB8sfD3VxCCcblKPLnNuMWnMixOC0sMBV1IegBLV1rOwTA.jpg" alt="MRI machine in a medical facility")
+// Mixin untuk Informasi Tambahan
+mixin customInfo(title, items)
+  .custom-info
+    h2.custom-info-title= title
+    ul.custom-info-list
+      each item in items
+        li= item
+
+// Mixin untuk Galeri
+mixin customGallery(images)
+  .custom-gallery
+    h2.custom-gallery-title Galeri
+    .custom-gallery-images
+      each image in images
+        img(src=image.src alt=image.alt)

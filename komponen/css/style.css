@@ -2077,3 +2077,78 @@ h1.inpatient-title {
   height: 150px;
   object-fit: cover;
 }
+
+/* =================
+||medicalCheckup||
+================= */
+
+.custom-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.custom-header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.custom-header img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.custom-header-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: red;
+  font-size: 36px;
+  margin: 0;
+}
+
+.custom-description,
+.custom-section,
+.custom-info,
+.custom-gallery {
+  margin-bottom: 40px;
+}
+
+.custom-description-title,
+.custom-section-title,
+.custom-info-title,
+.custom-gallery-title {
+  color: #000000;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.custom-description-text,
+.custom-section-text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.custom-info-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.custom-info-list li {
+  margin-bottom: 10px;
+}
+
+.custom-gallery {
+  text-align: center;
+}
+
+.custom-gallery-images img {
+  width: 30%;
+  height: auto;
+  margin: 0 10px;
+}

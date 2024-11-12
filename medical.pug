@@ -1,18 +1,27 @@
-//- medicalCheckup.pug
-
 extends komponen/pug/_template.pug
 
-
 block content
-<<<<<<< HEAD
-  .content-container
-    +headerSection("https://storage.googleapis.com/a1aa/image/HeeIyDBkE5k9YUOVvkTkbhn3GfT5vGB6qPZUJw76eTBRv6APB.jpg", "Selamat Datang Di<br>Medical Check Up")
-    +textContent
-    +imageGallery
-=======
-  +banner
-  +description
-  +services
-  +additional_info
-  +gallery
->>>>>>> 7499354d241ef49a4c65c27f0fec86bdfda8d9ee
+  .custom-container
+    +customHeader("https://storage.googleapis.com/a1aa/image/2WRx0YqVrRJrGti09DiQpMhe4tWHsyvhCdfMyYGAloo5FRwTA.jpg", "Selamat Datang Di", "Medical Check Up")
+
+    +customDescription("Deskripsi", "Gaya hidup modern dan tingkat stres yang tinggi berdampak terhadap kesehatan...")
+
+    +customSection("High Definition Magnetic Resonance Imaging(MRI) 3 Tesla Skyra", "Merupakan teknik pencitraan resonansi magnetik...")
+
+    +customSection("CT-scan Flash with Dual Source", "Sebuah teknik yang menggabungkan beberapa rangkaian gambar X-ray...")
+
+    +customSection("Body Mass Composition Analyzer", "Alat yang digunakan untuk mengukur berbagai indikator massa tubuh...")
+
+    +customSection("One Stop Service", "IPS memiliki berbagai fasilitas pendukung dan arena...")
+
+    +customInfo("Informasi Tambahan", [
+      "Untuk pilihan paket-paket MCU dapat menghubungi:",
+      "Informasi dan pendaftaran, dapat menghubungi:",
+      "Telepon: (021) 50852524"
+    ])
+
+    +customGallery([
+      { src: "https://storage.googleapis.com/a1aa/image/sjTNhd0y5yIJD5RzMtIF5xAdAMxxyoaBvlF28nTrJgjeiI4JA.jpg", alt: "Medical examination room with modern equipment" },
+      { src: "https://storage.googleapis.com/a1aa/image/Mi3QY3ex8iQZQSQRMwxIFuoaYs5oUR20lUvuuhlQkfY8FRwTA.jpg", alt: "Medical examination bed and equipment" },
+      { src: "https://storage.googleapis.com/a1aa/image/O7xEYeRrhwQEe0Xq8SWbcddfVKntRkvDESEk9R439g9wLignA.jpg", alt: "MRI machine in a clean, modern room" }
+    ])
