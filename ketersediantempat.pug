@@ -8,8 +8,12 @@ block content
       | mempertimbangkan juga kelompok usia (anak/ dewasa), jenis kelamin, 
       | dan kondisi penyakit dari pasien yang telah menempati ruangan tersebut.
 
-    .bed-status
-      div.status Total : 290
-      div.status Available : 103
-      div.status Occupied : 168
-      div.status Cleaning : 19
+    -
+      var bedStatuses = [
+        { label: 'Total', count: 290 },
+        { label: 'Available', count: 103 },
+        { label: 'Occupied', count: 168 },
+        { label: 'Cleaning', count: 19 }
+      ]
+
+    +bedStatus(bedStatuses)

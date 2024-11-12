@@ -1,0 +1,4 @@
+mixin bedStatus(statuses)
+  .bed-status
+    each status in statuses
+      div.status= `${status.label} : ${status.count}`

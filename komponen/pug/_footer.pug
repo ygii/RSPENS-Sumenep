@@ -14,10 +14,10 @@ mixin logoSection(imageSrc, altText)
     img(src=imageSrc alt=altText)
 
 // Mixin untuk registration section
-mixin registrationSection(text, buttonText)
+mixin registrationSection(text, buttonText, link)
   .registration-section
     p= text
-    button.register-button= buttonText
+    a.register-button(href=link)= buttonText
 
 // Mixin footer untuk memanggil semua bagian
 mixin footer()
@@ -35,4 +35,4 @@ mixin footer()
         { href: '#', text: 'Pens DDK' }
       ])
       +logoSection('komponen/assets/img/Logo_PENS.png', 'PENS Logo')
-    +registrationSection('Pendaftaran poliklinik dan vaksin', 'KLIK DISINI')
+    +registrationSection('Pendaftaran poliklinik dan vaksin', 'KLIK DISINI', 'register.html')
