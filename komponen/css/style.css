@@ -1929,6 +1929,7 @@ h1.inpatient-title {
   transform: rotate(180deg);
 }
 /*medical check up */
+<<<<<<< HEAD
 .custom-container {
   width: 80%;
   margin: 0 auto;
@@ -2067,4 +2068,77 @@ h1.inpatient-title {
   width: 30%;
   height: auto;
   margin: 10px;
+=======
+.container-custom {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  max-width: 1200px;
+}
+
+.nav-custom {
+  font-size: 0.875rem;
+  color: #4a5568;
+  margin-bottom: 1rem;
+}
+
+.banner-custom img {
+  width: 1900px;
+  height: 600px;
+}
+
+.banner-text-custom {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.title-small-custom {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.title-large-custom {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ef4444;
+}
+
+.section-title-custom {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.section-content-custom {
+  margin-bottom: 1rem;
+}
+
+.gallery-custom {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .gallery-custom {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.img-custom {
+  width: 600px;
+  height: 400px;
+>>>>>>> df27286fc25a02bc31f429e02d8a53a0a52d0f0d
 }
