@@ -1929,151 +1929,142 @@ h1.inpatient-title {
   transform: rotate(180deg);
 }
 /*medical check up */
-.header-section {
+.custom-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.custom-header {
   position: relative;
   text-align: center;
   margin-bottom: 20px;
 }
 
-.header-section img {
+.custom-header img {
   width: 100%;
   height: auto;
   max-height: 400px;
+  object-fit: cover;
 }
 
-.header-section h1 {
+.custom-header-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: red;
+  font-size: 36px;
+  margin: 0;
+}
+
+.custom-description,
+.custom-section,
+.custom-info,
+.custom-gallery {
+  margin-bottom: 40px;
+}
+
+.custom-description-title,
+.custom-section-title,
+.custom-info-title,
+.custom-gallery-title {
+  color: #000000;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.custom-description-text,
+.custom-section-text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.custom-info-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.custom-info-list li {
+  margin-bottom: 10px;
+}
+
+.custom-gallery {
+  text-align: center;
+}
+
+.custom-gallery-images img {
+  width: 30%;
+  height: auto;
+  margin: 0 10px;
+}
+/*gawat darurat*/
+.main-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.banner-section {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  max-height: 300px;
+}
+
+.banner-section img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.banner-text-overlay {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #ff0000;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.banner-subtitle {
+  display: block;
+  color: #ff0000;
   font-size: 36px;
-  margin: 0;
 }
 
-/* Text Content Section */
-.text-content {
-  margin-bottom: 40px;
-}
-
-.text-content .title {
-  color: #000000;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.text-content p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-/* Image Gallery Section */
-.image-gallery {
-  text-align: center;
-}
-
-.image-gallery .title {
-  color: #000000;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.image-gallery img {
-  width: 30%;
-  height: auto;
-  margin: 0 1.5%;
-}
-/*gawat darurat*/
-.emergency-container {
-  padding: 20px;
-}
-
-.breadcrumb-section-emergency {
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-
-.breadcrumb-section-emergency a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.breadcrumb-section-emergency a:hover {
-  text-decoration: underline;
-}
-
-.image-wrapper-emergency {
-  position: relative;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.image-wrapper-emergency img {
-  width: 800px;
-  max-width: 600px;
-  height: 400px;
-}
-
-.image-caption-emergency {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 5px 10px;
-}
-
-.lab-details-emergency {
+.section-content,
+.section-details,
+.section-extra-info,
+.section-gallery {
   margin-top: 20px;
 }
 
-.section-title-emergency {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.sub-section-title-emergency {
+.section-content-title,
+.section-details-title,
+.section-extra-info-title,
+.section-gallery-title {
+  color: #000000;
   font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
 }
 
-.description-text-emergency {
+.section-text,
+.section-detail-text,
+.extra-info-list {
   font-size: 14px;
   line-height: 1.6;
+  color: #333333;
 }
 
-.lab-list-emergency {
-  margin-top: 15px;
-  padding-left: 20px;
+.gallery-display {
+  text-align: center;
 }
 
-.lab-list-emergency li {
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-.gallery-section-emergency {
-  margin-top: 30px;
-}
-
-.gallery-title-emergency {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.gallery-images-emergency {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.gallery-images-emergency img {
-  width: 200px;
-  height: 150px;
-  object-fit: cover;
+.gallery-images img {
+  width: 30%;
+  height: auto;
+  margin: 10px;
 }

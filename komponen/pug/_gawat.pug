@@ -1,36 +1,35 @@
-// Breadcrumb Mixin
-mixin breadcrumb
-  .breadcrumb-section-emergency
-    a(href="#") Home
-    |  /
-    a(href="#") Layanan
-    |  / Gawat Darurat
+// Mixin untuk Banner Section
+mixin bannerSection(imageSrc, mainText, subText)
+  .banner-section
+    img(src=imageSrc alt="Medical equipment in a clean, modern room")
+    .banner-text-overlay
+      = mainText
+      span.banner-subtitle= subText
 
-// Main Image Mixin
-mixin mainImage(imageSrc, altText)
-  .image-wrapper-emergency
-    img(src=imageSrc, alt=altText, width="600", height="400")
-    .image-caption-emergency Selamat Datang di Gawat Darurat
+// Mixin untuk Konten Utama
+mixin sectionContent(title, text)
+  .section-content
+    h2.section-content-title= title
+    p.section-text= text
 
-// Description Mixin
-mixin description
-  .lab-details-emergency
-    h2.section-title-emergency Deskripsi
-    h3.sub-section-title-emergency Pelayanan
-    p.description-text-emergency IGD RS PENS Sumenep...
-    
-    ul.lab-list-emergency
-      each service in ['Ruang Penanganan Emergensi (5 bed)', 'Ruang Observasi (7 bed)', 'Klinik IGD (4 ruangan)', 'Ruang Isolasi tekanan negatif (2 bed)', 'Kamar operasi emergensi bertekanan negatif', 'Ventilator', 'High Flow nasal cannula', 'Monitor defibrillator', 'Infant warmer', 'Ambulans gawat darurat']
-        li= service
+// Mixin untuk Section Detail
+mixin sectionDetails(title, text)
+  .section-details
+    h2.section-details-title= title
+    p.section-detail-text= text
 
-// Gallery Mixin
-mixin gallery
-  .gallery-section-emergency
-    h2.gallery-title-emergency GALERI
-    .gallery-images-emergency
-      each image in [
-        { src: "https://storage.googleapis.com/a1aa/image/Pec9ZpVt29RpASsrr3jwrduD2UdMYi6RCNFsQSMRbIxtkI3JA.jpg", alt: "Emergency department exterior" },
-        { src: "https://storage.googleapis.com/a1aa/image/RaFgw2HWDHYELRB1QF0KosjsVn0brMUseN6YhebvF6UYJRuTA.jpg", alt: "Emergency staff handling patient" },
-        { src: "https://storage.googleapis.com/a1aa/image/mMrhx311veTRQaqVh9wU3iil9FwauLqOv78IjQzuskVrkI3JA.jpg", alt: "Emergency equipment" }
-      ]
-        img(src=image.src, alt=image.alt, width="200", height="150")
+// Mixin untuk Informasi Tambahan
+mixin sectionExtraInfo(title, items)
+  .section-extra-info
+    h2.section-extra-info-title= title
+    ul.extra-info-list
+      each item in items
+        li= item
+
+// Mixin untuk Galeri
+mixin sectionGallery(images)
+  .section-gallery
+    h2.section-gallery-title Galeri
+    .gallery-images
+      each image in images
+        img(src=image.src alt=image.alt)

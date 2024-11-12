@@ -1,7 +1,23 @@
 extends komponen/pug/_template.pug
+
 block content
-  .emergency-container
-    +breadcrumb
-    +mainImage("https://storage.googleapis.com/a1aa/image/LkW0EGAUsrIxApZQP920oo7o2giLH5I2E8zGReLlOeeySicnA.jpg", "Gawat Darurat")
-    +description
-    +gallery
+  .main-wrapper
+    +bannerSection("https://storage.googleapis.com/a1aa/image/F9ALTQN0RBpePSyr7H5ax9zVKPx5f1S1ceUA6M5uctPS7jgnA.jpg", "Selamat Datang Di", "Medical Check Up")
+
+    +sectionContent("Deskripsi", "Gaya hidup modern dan tingkat stres yang tinggi berdampak terhadap kesehatan...")
+    +sectionDetails("High Definition Magnetic Resonance Imaging (MRI) 3 Tesla Skyra", "Teknologi diagnostik pencitraan resonansi magnetik...")
+    +sectionDetails("CT-scan Flash with Dual Source", "Sebuah teknik yang menggunakan beberapa pancaran sinar-X...")
+    +sectionDetails("Body Mass Composition Analyzer", "Teknologi terbaru untuk mengukur komposisi tubuh...")
+    +sectionDetails("One Stop Service", "Executive Health Check Up memberikan kemudahan bagi Anda...")
+
+    +sectionExtraInfo("Informasi Tambahan", [
+      "Telepon : (021) 12345678",
+      "Fax : (021) 87654321",
+      "Handphone : (021) 9087654321"
+    ])
+
+    +sectionGallery([
+      { src: "https://storage.googleapis.com/a1aa/image/F9ALTQN0RBpePSyr7H5ax9zVKPx5f1S1ceUA6M5uctPS7jgnA.jpg", alt: "Medical equipment in a clean, modern room" },
+      { src: "https://storage.googleapis.com/a1aa/image/Xmp6cuNlAPrzKFW5f2LsXskUq3X0UNSQYTKS8F0jxzL1eRwTA.jpg", alt: "Medical examination room with a bed and equipment" },
+      { src: "https://storage.googleapis.com/a1aa/image/PC51uXmsQpqKKZuvZWsQDUhFGgA8JUD42w0STn1pJ81ZfI4JA.jpg", alt: "Advanced medical imaging equipment in a clean room" }
+    ])
