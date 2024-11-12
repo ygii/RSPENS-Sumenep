@@ -1930,75 +1930,58 @@ h1.inpatient-title {
   transform: rotate(180deg);
 }
 /*medical check up */
-.container-custom {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  max-width: 1200px;
+.header-section {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.nav-custom {
-  font-size: 0.875rem;
-  color: #4a5568;
-  margin-bottom: 1rem;
+.header-section img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
 }
 
-.banner-custom img {
-  width: 1900px;
-  height: 600px;
-}
-
-.banner-text-custom {
+.header-section h1 {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ff0000;
+  font-size: 36px;
+  margin: 0;
+}
+
+/* Text Content Section */
+.text-content {
+  margin-bottom: 40px;
+}
+
+.text-content .title {
+  color: #000000;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Image Gallery Section */
+.image-gallery {
   text-align: center;
 }
 
-.title-small-custom {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #ffffff;
+.image-gallery .title {
+  color: #000000;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-.title-large-custom {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #ef4444;
-}
-
-.section-title-custom {
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-
-.section-content-custom {
-  margin-bottom: 1rem;
-}
-
-.gallery-custom {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr;
-}
-
-@media (min-width: 768px) {
-  .gallery-custom {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.img-custom {
-  width: 600px;
-  height: 400px;
+.image-gallery img {
+  width: 30%;
+  height: auto;
+  margin: 0 1.5%;
 }

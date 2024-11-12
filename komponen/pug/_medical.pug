@@ -1,44 +1,35 @@
-mixin nav
-  nav.nav-custom Home / Layanan / Medical Check Up
-mixin banner
-  .banner-custom.relative.mb-8
-    img(src="https://storage.googleapis.com/a1aa/image/suct3VwbcX4eLa6f8GNqafNexwfokxq7uyy9P0uLW9kZfX97E.jpg" alt="Medical equipment in a clean, modern room" width="800" height="400")
-    .banner-text-custom
-      h1.title-small-custom Selamat Datang Di
-      h2.title-large-custom Medical Check Up
-mixin description
-  section.mb-8
-    h3.section-title-custom Deskripsi
-    p.section-content-custom Gaya hidup modern dan tingkat stres yang tinggi berdampak terhadap kesehatan...
-    p.section-content-custom Medical Check Up RSKB Bina Sehat menggabungkan teknologi terkini...
-mixin services
-  section.mb-8
-    h3.section-title-custom High Definition Magnetic Resonance Imaging(MRI) 3 Tesla Skyra
-    p.section-content-custom Teknologi diagnostik pencitraan tubuh yang mutakhir...
+//- medicalCheckupMixins.pug
 
-  section.mb-8
-    h3.section-title-custom CT-scan Flash with Dual Source
-    p.section-content-custom Sebuah teknik yang memungkinkan beberapa rangkaian gambar X-ray...
+// Mixin for the header section
+mixin headerSection(imageSrc, headerText)
+  .header-section
+    img(src=imageSrc alt="Medical equipment in a modern medical facility")
+    h1 !{headerText}
 
-  section.mb-8
-    h3.section-title-custom Body Mass Composition Analyzer
-    p.section-content-custom Sebuah alat yang digunakan untuk mengukur indeks massa tubuh...
+// Mixin for the text content section
+mixin textContent
+  .text-content
+    h2.title Deskripsi
+    p Description of the medical check-up offerings and available services.
+    h2.title High Definition Magnetic Resonance Imaging (MRI) 3 Tesla Skyra
+    p Detailed description of the MRI equipment.
+    h2.title CT-scan Flash with Dual Source
+    p Detailed description of the CT-scan equipment.
+    h2.title Body Mass Composition Analyzer
+    p Detailed description of the body mass analyzer.
+    h2.title One Stop Service
+    p Description of the one-stop service benefits.
+    h2.title Informasi Tambahan
+    p 1. Jumlah pilihan paket MCU dapat disesuaikan.
+    br
+    p 2. Untuk informasi dan pendaftaran, dapat menghubungi:
+    br
+    p - Telephone : (021) 50829224
 
-  section.mb-8
-    h3.section-title-custom One Stop Service
-    p.section-content-custom Sebuah pelayanan terpadu yang akan memudahkan Anda dalam pemeriksaan dokter dari berbagai spesialisasi...
-mixin additional_info
-  section.mb-8
-    h3.section-title-custom Informasi Tambahan
-    p.section-content-custom Untuk informasi lebih lanjut dan pendaftaran Medical Check Up, dapat menghubungi :
-    ul.list-disc.list-inside.mb-4
-      li Unit Pelayanan Medical Check Up
-      li Telepon : (032) 5408292
-      li Telepon : (032) 5408292
-mixin gallery
-  section
-    h3.section-title-custom.text-center Galeri
-    .gallery-custom
-      img.img-custom(src="https://storage.googleapis.com/a1aa/image/MSCr4NjCVX7tJlvPESWYFo3pbvu8imiOXVfqB5rfx9n9fqfOB.jpg" alt="Medical examination room with equipment" width="300" height="200")
-      img.img-custom(src="https://storage.googleapis.com/a1aa/image/u69xlGbPNfTf70Q1KYqk3k6YNkgfYlWafAKguFT3J3yzfre7E.jpg" alt="Hospital bed in a clean room" width="300" height="200")
-      img.img-custom(src="https://storage.googleapis.com/a1aa/image/SyzxowAuWJ5lN5wfFZ3VKTSv6B0IHw9jec1ULK0Qvueffre7E.jpg" alt="MRI machine in a medical facility" width="300" height="200")
+// Mixin for the image gallery section
+mixin imageGallery
+  .image-gallery
+    h2.title Galeri
+    img(src="https://storage.googleapis.com/a1aa/image/KjFeDv3nGW0eZUmveuJav8Wa0PFf6QpVKyFcVNRiDGmNv6APB.jpg" alt="Medical examination room with modern equipment")
+    img(src="https://storage.googleapis.com/a1aa/image/rze9gLiwgAyCQyouAi5mPAKfcIiyOtVlnACUJVglrwejXdgnA.jpg" alt="Hospital bed in a clean and modern room")
+    img(src="https://storage.googleapis.com/a1aa/image/4suwB8sfD3VxCCcblKPLnNuMWnMixOC0sMBV1IegBLV1rOwTA.jpg" alt="MRI machine in a medical facility")
