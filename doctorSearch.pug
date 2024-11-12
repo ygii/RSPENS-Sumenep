@@ -3,52 +3,17 @@ extends komponen/pug/_template.pug
 block content
   +doctorSearch
 
+  -
+    var doctors = [
+      {name: 'dr. Mala Azitha', specialization: 'Dokter Umum', image: 'komponen/assets/img/dokter.jpeg'},
+      {name: 'dr. Herlin Oktaviyani', specialization: 'Dokter Umum', image: 'komponen/assets/img/dokter.jpeg'},
+      {name: 'dr. Yohannessa Wulandari, M. Gizi', specialization: 'Ilmu Gizi Klinik', image: 'komponen/assets/img/dokter.jpeg'},
+      {name: 'dr. Cepi Teguh Pramayadi, Sp.OG(K)', specialization: 'Obstetri dan Ginekologi', image: 'komponen/assets/img/dokter.jpeg'},
+      {name: 'dr. Karla Duha', specialization: 'Dokter Umum', image: 'komponen/assets/img/dokter.jpeg'},
+      {name: 'dr. Putri Paramita Sakti, Sp.KFR', specialization: 'Ilmu Kedokteran Fisik dan Rehabilitasi', image: 'komponen/assets/img/dokter.jpeg'}
+    ]
+
   section.doctor-listing
     .container
-      .doctor-card
-        img(src="komponen/assets/img/dokter.jpeg" alt="Dr. Mala Azitha")
-        .doctor-info
-          h3 dr. Mala Azitha
-          p Dokter Umum
-          p Keahlian: -
-          button Selengkapnya
-
-      .doctor-card
-        img(src="komponen/assets/img/dokter.jpeg" alt="Dr. Herlin Oktaviyani")
-        .doctor-info
-          h3 dr. Herlin Oktaviyani
-          p Dokter Umum
-          p Keahlian: -
-          button Selengkapnya
-
-      .doctor-card
-        img(src="komponen/assets/img/dokter.jpeg" alt="Dr. Yohannessa Wulandari")
-        .doctor-info
-          h3 dr. Yohannessa Wulandari, M. Gizi
-          p Ilmu Gizi Klinik
-          p Keahlian: -
-          button Selengkapnya
-
-      .doctor-card
-        img(src="komponen/assets/img/dokter.jpeg" alt="Dr. Cepi Teguh Pramayadi")
-        .doctor-info
-          h3 dr. Cepi Teguh Pramayadi, Sp.OG(K)
-          p Obstetri dan Ginekologi
-          p Keahlian: -
-          button Selengkapnya
-
-      .doctor-card
-        img(src="komponen/assets/img/dokter.jpeg" alt="Dr. Karla Duha")
-        .doctor-info
-          h3 dr. Karla Duha
-          p Dokter Umum
-          p Keahlian: -
-          button Selengkapnya
-
-      .doctor-card
-        img(src="komponen/assets/img/dokter.jpeg" alt="Dr. Putri Paramita Sakti")
-        .doctor-info
-          h3 dr. Putri Paramita Sakti, Sp.KFR
-          p Ilmu Kedokteran Fisik dan Rehabilitasi
-          p Keahlian: -
-          button Selengkapnya
+      each doctor in doctors
+        +doctorCard(doctor.name, doctor.specialization, doctor.image)
