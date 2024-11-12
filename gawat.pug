@@ -1,7 +1,42 @@
 extends komponen/pug/_template.pug
+
 block content
-  .emergency-container
-    +breadcrumb
-    +mainImage("https://storage.googleapis.com/a1aa/image/LkW0EGAUsrIxApZQP920oo7o2giLH5I2E8zGReLlOeeySicnA.jpg", "Gawat Darurat")
-    +description
-    +gallery
+  .container
+    .breadcrumb
+      a(href='#') Home
+      |  /
+      a(href='#') Layanan
+      |  / Gawat Darurat
+
+    // Menggunakan mixin headerImage
+    +headerImage("https://storage.googleapis.com/a1aa/image/8msAUG70Ub4jEJa6SfYIkSIGbQQ3W9hFtnv5z6mvPj6NIJ3JA.jpg", "Emergency Room", "Gawat Darurat")
+
+    // Menggunakan mixin contentSection
+    +contentSection("Deskripsi", [
+      "Pelayanan",
+      "IGD RS PENS Surabaya dapat menangani kasus gawat darurat segala usia, mulai anak hingga dewasa...",
+      "Pelayanan Klinik Emergensi",
+      "IGD RS PENS dapat menangani kasus gawat darurat segala usia, mulai anak hingga dewasa...",
+      "Pelayanan gawat darurat kebidanan dan kandungan",
+      "IGD RS PENS dapat menangani kasus gawat darurat segala usia, mulai anak hingga dewasa..."
+    ])
+
+    // Menggunakan mixin servicesList
+    +servicesList("Layanan", [
+      "Ruang penanganan emergensi (5 bed)",
+      "Ruang observasi (2 bed)",
+      "Ruang IGD (5 ruangan)",
+      "Ruang isolasi tekanan negatif (2 bed)",
+      "Ruang perawatan pasien berkaitan negatif",
+      "High flow nasal cannula",
+      "Ventilator",
+      "Monitor",
+      "Ambulans gawat darurat"
+    ])
+
+    // Menggunakan mixin gallerySection
+    +gallerySection("GALERI", [
+      { src: "https://storage.googleapis.com/a1aa/image/FboVqixaKO4bEBLujNvtAkGqMV8dR4wrjPMcd5znDW9Fkk7E.jpg", alt: "Emergency Room Entrance" },
+      { src: "https://storage.googleapis.com/a1aa/image/CYFePkpDRlTETqkFfsQ6VVqSXA2vZvf7ZnKub1OVcfWjBJ5OB.jpg", alt: "Hospital Building" },
+      { src: "https://storage.googleapis.com/a1aa/image/HknxY2ylXza5PpH4t4UOXN9AQovLLAhtXD7SPrgRT0QGkk7E.jpg", alt: "Emergency Medical Team" }
+    ])

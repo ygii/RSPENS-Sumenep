@@ -1929,226 +1929,75 @@ h1.inpatient-title {
   transform: rotate(180deg);
 }
 /*medical check up */
-.header-section {
-  position: relative;
-  text-align: center;
-  margin-bottom: 20px;
+.container-custom {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  max-width: 1200px;
 }
 
-.header-section img {
-  width: 100%;
-  height: auto;
-  max-height: 400px;
+.nav-custom {
+  font-size: 0.875rem;
+  color: #4a5568;
+  margin-bottom: 1rem;
 }
 
-.header-section h1 {
+.banner-custom img {
+  width: 1900px;
+  height: 600px;
+}
+
+.banner-text-custom {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ff0000;
-  font-size: 36px;
-  margin: 0;
-}
-
-/* Text Content Section */
-.text-content {
-  margin-bottom: 40px;
-}
-
-.text-content .title {
-  color: #000000;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.text-content p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-/* Image Gallery Section */
-.image-gallery {
-  text-align: center;
-}
-
-.image-gallery .title {
-  color: #000000;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.image-gallery img {
-  width: 30%;
-  height: auto;
-  margin: 0 1.5%;
-}
-/*gawat darurat*/
-.emergency-container {
-  padding: 20px;
-}
-
-.breadcrumb-section-emergency {
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-
-.breadcrumb-section-emergency a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.breadcrumb-section-emergency a:hover {
-  text-decoration: underline;
-}
-
-.image-wrapper-emergency {
-  position: relative;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.image-wrapper-emergency img {
-  width: 800px;
-  max-width: 600px;
-  height: 400px;
-}
-
-.image-caption-emergency {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 5px 10px;
-}
-
-.lab-details-emergency {
-  margin-top: 20px;
-}
-
-.section-title-emergency {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.sub-section-title-emergency {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.description-text-emergency {
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-.lab-list-emergency {
-  margin-top: 15px;
-  padding-left: 20px;
-}
-
-.lab-list-emergency li {
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-.gallery-section-emergency {
-  margin-top: 30px;
-}
-
-.gallery-title-emergency {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.gallery-images-emergency {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.gallery-images-emergency img {
-  width: 200px;
-  height: 150px;
-  object-fit: cover;
-}
-
-/* =================
-||medicalCheckup||
-================= */
-
-.custom-container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.custom-header {
-  position: relative;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.custom-header img {
-  width: 100%;
-  height: auto;
-  max-height: 400px;
-  object-fit: cover;
-}
-
-.custom-header-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: red;
-  font-size: 36px;
-  margin: 0;
-}
-
-.custom-description,
-.custom-section,
-.custom-info,
-.custom-gallery {
-  margin-bottom: 40px;
-}
-
-.custom-description-title,
-.custom-section-title,
-.custom-info-title,
-.custom-gallery-title {
-  color: #000000;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.custom-description-text,
-.custom-section-text {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.custom-info-list {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-.custom-info-list li {
-  margin-bottom: 10px;
-}
-
-.custom-gallery {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
-.custom-gallery-images img {
-  width: 30%;
-  height: auto;
-  margin: 0 10px;
+.title-small-custom {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.title-large-custom {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ef4444;
+}
+
+.section-title-custom {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.section-content-custom {
+  margin-bottom: 1rem;
+}
+
+.gallery-custom {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .gallery-custom {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.img-custom {
+  width: 600px;
+  height: 400px;
 }

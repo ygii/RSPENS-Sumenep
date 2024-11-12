@@ -1,36 +1,27 @@
-// Breadcrumb Mixin
-mixin breadcrumb
-  .breadcrumb-section-emergency
-    a(href="#") Home
-    |  /
-    a(href="#") Layanan
-    |  / Gawat Darurat
+// Mixin untuk header gambar dan teks
+mixin headerImage(src, alt, text)
+  .header-image
+    img(src=src, alt=alt)
+    .header-text= text
 
-// Main Image Mixin
-mixin mainImage(imageSrc, altText)
-  .image-wrapper-emergency
-    img(src=imageSrc, alt=altText, width="600", height="400")
-    .image-caption-emergency Selamat Datang di Gawat Darurat
+// Mixin untuk konten deskripsi
+mixin contentSection(title, paragraphs)
+  .content
+    h2= title
+    each para in paragraphs
+      p= para
 
-// Description Mixin
-mixin description
-  .lab-details-emergency
-    h2.section-title-emergency Deskripsi
-    h3.sub-section-title-emergency Pelayanan
-    p.description-text-emergency IGD RS PENS Sumenep...
-    
-    ul.lab-list-emergency
-      each service in ['Ruang Penanganan Emergensi (5 bed)', 'Ruang Observasi (7 bed)', 'Klinik IGD (4 ruangan)', 'Ruang Isolasi tekanan negatif (2 bed)', 'Kamar operasi emergensi bertekanan negatif', 'Ventilator', 'High Flow nasal cannula', 'Monitor defibrillator', 'Infant warmer', 'Ambulans gawat darurat']
-        li= service
+// Mixin untuk daftar layanan
+mixin servicesList(title, items)
+  h2= title
+  ul
+    each item in items
+      li= item
 
-// Gallery Mixin
-mixin gallery
-  .gallery-section-emergency
-    h2.gallery-title-emergency GALERI
-    .gallery-images-emergency
-      each image in [
-        { src: "https://storage.googleapis.com/a1aa/image/Pec9ZpVt29RpASsrr3jwrduD2UdMYi6RCNFsQSMRbIxtkI3JA.jpg", alt: "Emergency department exterior" },
-        { src: "https://storage.googleapis.com/a1aa/image/RaFgw2HWDHYELRB1QF0KosjsVn0brMUseN6YhebvF6UYJRuTA.jpg", alt: "Emergency staff handling patient" },
-        { src: "https://storage.googleapis.com/a1aa/image/mMrhx311veTRQaqVh9wU3iil9FwauLqOv78IjQzuskVrkI3JA.jpg", alt: "Emergency equipment" }
-      ]
-        img(src=image.src, alt=image.alt, width="200", height="150")
+// Mixin untuk galeri gambar
+mixin gallerySection(title, images)
+  .gallery
+    h2= title
+    .gallery-images
+      each image in images
+        img(src=image.src, alt=image.alt)
