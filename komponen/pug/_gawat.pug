@@ -1,8 +1,6 @@
-// Komponen Breadcrumb
 mixin breadcrumb(path)
   .breadcrumb= path
 
-// Komponen Header dengan Gambar dan Teks
 mixin headerSection(imageSrc, altText, mainText, subText)
   .header
     img.header-image(src=imageSrc alt=altText)
@@ -10,14 +8,12 @@ mixin headerSection(imageSrc, altText, mainText, subText)
       p= mainText
       p= subText
 
-// Komponen Deskripsi
 mixin descriptionSection(title, paragraphs)
   .description
     h2= title
     each paragraph in paragraphs
       p= paragraph
 
-// Komponen Informasi Tambahan
 mixin additionalInfo(items)
   .info
     h2 Informasi Tambahan
@@ -25,7 +21,6 @@ mixin additionalInfo(items)
       each item in items
         li= item
 
-// Komponen Galeri
 mixin gallerySection(title, images)
   .gallery
     h2= title

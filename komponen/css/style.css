@@ -1941,7 +1941,7 @@ body {
   margin-right: 0;
 }
 
-/* gawat darurat */
+/* gawat darurat yang terbaru */
 .container {
   width: 80%;
   margin: 0 auto;
@@ -1961,7 +1961,7 @@ body {
 }
 
 .header-image {
-  width: 800px;
+  width: 1000px;
   height: 400px;
   border-radius: 10px;
 }
