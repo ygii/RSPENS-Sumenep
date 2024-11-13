@@ -1,28 +1,28 @@
 extends komponen/pug/_template.pug
 
+block head
+  link(rel="stylesheet" href="emergency.css")
+
 block content
-  .container
-    +breadcrumb("Home / Layanan / Medical Check Up")
+  .emergency-container
+    include komponen.pug
 
-    +headerSection(
-      "https://storage.googleapis.com/a1aa/image/1qDyA5fBppWAa6KCIMVmcwLZ2XQtbLDvXcRSPUHU0IsbGP4JA.jpg",
-      "Medical equipment in a clean, modern room",
-      "Selamat Datang Di",
-      "Medical Check Up"
-    )
+    +emergencyHeader("https://storage.googleapis.com/a1aa/image/D491MnjelXy1ZaswG97fZ3CkE9o4lYjdNDQ7itqqTnND1dwTA.jpg", "Emergency Room", "Selamat Datang di", "Gawat Darurat")
 
-    +descriptionSection("Deskripsi", [
-      "Gaya hidup modern dan tingkat stres yang tinggi berdampak terhadap kesehatan. Pemeriksaan kesehatan berkala penting dilakukan demi mencegah terjadinya penyakit degeneratif dan dampaknya yang fatal, menilai faktor risiko terhadap penyakit tertentu, serta untuk memantau perkembangan kesehatan Anda. Tidak semua masalah kesehatan menunjukkan gejala pada tahap awal, oleh karena itu periksakan kesehatan Anda dengan rutin agar penanganannya dapat dilakukan sejak dini. Executive Health Check Up RS menyediakan berbagai pilihan pemeriksaan kesehatan yang spesifik sesuai dengan kebutuhan Anda."
+    +emergencyDescription("Deskripsi", "Pelayanan IGD RS PENS Sumenep dapat menangani kasus gawat darurat segala usia, mulai anak hingga dewasa. Berbagai tindakan gawat darurat, mulai dari pengelolaan fungsi vital (jalan napas, pernapasan, dan peredaran darah), penanganan kasus kecelakaan, dan kegawatdaruratan medis lainnya. Pasien akan ditempatkan di ruangan yang sesuai dengan tingkat keparahan masalahnya dan dilayani secara optimal sesuai keluhan.")
+
+    +emergencyServiceList([
+      "Ruang penanganan emergensi (5 bed)",
+      "Ruang observasi (7 bed)",
+      "Klinik Ibu (4 ruangan)",
+      "High flow nasal cannula",
+      "Monitor defibrillator",
+      "Infant warmer",
+      "Ambulans gawat darurat"
     ])
 
-    +additionalInfo([
-      "1. Untuk info paket-paket MCU dapat menghubungi:",
-      "2. Untuk pendaftaran silahkan menghubungi:",
-      "Telephone : (021) 8062 7820"
-    ])
-
-    +gallerySection("Galeri", [
-      {src: "https://storage.googleapis.com/a1aa/image/1qDyA5fBppWAa6KCIMVmcwLZ2XQtbLDvXcRSPUHU0IsbGP4JA.jpg", alt: "Medical equipment in a clean, modern room"},
-      {src: "https://storage.googleapis.com/a1aa/image/XFeDbtuqZvSoL6whSmGDxqZZScpA1rnvDmuuUn3PCWYcGP4JA.jpg", alt: "Hospital bed in a clean, modern room"},
-      {src: "https://storage.googleapis.com/a1aa/image/R6Y1Y8p6LsJhABeYUAkEAUJ6OL0Hng9KPQdjfcS1CYi2MegnA.jpg", alt: "MRI machine in a clean, modern room"}
+    +emergencyGallery("GALERI", [
+      { src: "https://storage.googleapis.com/a1aa/image/Q2IyJwMfaLSfcUS47Nup3sxt6KSdX0FM42l8xQmwjSiC1dwTA.jpg", alt: "Hospital Entrance" },
+      { src: "https://storage.googleapis.com/a1aa/image/kyKyuvkuBi5rKtfwjFCHGQTaUD95EfVTU2WN3zJa8h1A1dwTA.jpg", alt: "Emergency Room Entrance" },
+      { src: "https://storage.googleapis.com/a1aa/image/rd9FCjDtC7YuHJp6soG9J4YSBQ4veNN37UVjZJt5g2yi6O4JA.jpg", alt: "Medical Staff in Action" }
     ])
