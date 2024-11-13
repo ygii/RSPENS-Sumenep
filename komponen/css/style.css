@@ -1626,3 +1626,212 @@ h1.inpatient-title {
   width: 200px;
   height: auto;
 }
+/* laboratorium */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.lab-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.lab-breadcrumb {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.lab-breadcrumb a {
+  color: #666;
+  text-decoration: none;
+}
+
+.lab-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.lab-image-wrapper {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.lab-image-wrapper img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+}
+
+.lab-image-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.lab-content {
+  margin-bottom: 20px;
+}
+
+.lab-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.lab-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.lab-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.lab-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.lab-content ul li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.lab-gallery {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.lab-gallery h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.lab-gallery 
+
+/*radiologi */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.radiology-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.radiology-breadcrumb {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.radiology-breadcrumb a {
+  color: #666;
+  text-decoration: none;
+}
+
+.radiology-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.radiology-header {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radiology-header img {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  max-height: 400px;
+  border-radius: 10px;
+}
+
+.radiology-header-text {
+  position: absolute;
+  color: #ff0000;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.radiology-description {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.radiology-service-item {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+
+.radiology-service-item:hover .radiology-dropdown {
+  display: block;
+}
+
+.radiology-dropdown {
+  display: none;
+  position: relative;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: #333;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.radiology-dropdown p {
+  color: #333;
+  padding: 10px 0;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+
+.radiology-dropdown p:hover {
+  background-color: #f1f1f1;
+}
+
+.radiology-gallery {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.radiology-gallery img {
+  width: 30%;
+  margin: 0 10px;
+  border-radius: 10px;
+}
