@@ -1,7 +1,30 @@
 extends komponen/pug/_template.pug
+
 block content
-  .content-container
-    +breadcrumb
-    +mainImage("https://storage.googleapis.com/a1aa/image/LkW0EGAUsrIxApZQP920oo7o2giLH5I2E8zGReLlOeeySicnA.jpg", "Interior of a modern laboratory with medical equipment")
-    +description
-    +gallery
+  .lab-container
+    +breadcrumbLab([
+      { href: "#", text: "Home" },
+      { href: "#", text: "Layanan" },
+      { href: "#", text: "Laboratorium" }
+    ])
+
+    +mainImageLab("https://storage.googleapis.com/a1aa/image/uHcGBewjiiVZEqryyJWrDIdjWBJkK35Xqx6AEdcojuGmBO4JA.jpg", "Interior of a modern laboratory with medical equipment", "Selamat Datang di", "Laboratorium")
+
+    +descriptionLab("Deskripsi", "Pelayanan", [
+      "Laboratorium RSFMR menerapkan konsep laboratorium terpadu sehingga memiliki laboratorium patologi klinik, patologi anatomi...",
+      "Laboratorium patologi klinik RSFMR telah terakreditasi oleh Kementerian Kesehatan dan telah diakui...",
+      "Laboratorium terpadu ini memiliki fasilitas patologi terdepan yang memungkinkan identifikasi patologi..."
+    ], [
+      "Laboratorium Patologi Klinik",
+      "Laboratorium Patologi Anatomi",
+      "Laboratorium Mikrobiologi",
+      "Laboratorium Biomolekuler",
+      "Laboratorium Parasitologi",
+      "Laboratorium Darah"
+    ])
+
+    +galleryLab([
+      { src: "https://storage.googleapis.com/a1aa/image/dHLhXQbH3GqXPxpxVW1dDEZNPJEXvdOV9xqRGUb7Su7xAH8E.jpg", alt: "Laboratory equipment and workspace" },
+      { src: "https://storage.googleapis.com/a1aa/image/Fqlk391iSf3CFqfqEH5xU8hyvv1QuIzTq5fZMuXVYDFVG4gnA.jpg", alt: "Laboratory technician working with a microscope" },
+      { src: "https://storage.googleapis.com/a1aa/image/WfdAW8jQyF0DOiEX80f6ffmPJh3PKffwSHMmPar1S7DTyAH8E.jpg", alt: "Modern laboratory with advanced equipment" }
+    ])

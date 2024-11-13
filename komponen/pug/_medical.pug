@@ -1,41 +1,3 @@
-<<<<<<< HEAD
-// Mixin untuk Header
-mixin customHeader(imageSrc, mainText, subText)
-  .custom-header
-    img(src=imageSrc alt="Medical equipment in a clean, modern room")
-    h1.custom-header-title
-      span= mainText
-      br
-      span= subText
-
-// Mixin untuk Description
-mixin customDescription(title, text)
-  .custom-description
-    h2.custom-description-title= title
-    p.custom-description-text= text
-
-// Mixin untuk Section
-mixin customSection(title, text)
-  .custom-section
-    h2.custom-section-title= title
-    p.custom-section-text= text
-
-// Mixin untuk Informasi Tambahan
-mixin customInfo(title, items)
-  .custom-info
-    h2.custom-info-title= title
-    ul.custom-info-list
-      each item in items
-        li= item
-
-// Mixin untuk Galeri
-mixin customGallery(images)
-  .custom-gallery
-    h2.custom-gallery-title Galeri
-    .custom-gallery-images
-      each image in images
-        img(src=image.src alt=image.alt)
-=======
 mixin nav
   nav.nav-custom Home / Layanan / Medical Check Up
 mixin banner
@@ -80,4 +42,3 @@ mixin gallery
       img.img-custom(src="https://storage.googleapis.com/a1aa/image/MSCr4NjCVX7tJlvPESWYFo3pbvu8imiOXVfqB5rfx9n9fqfOB.jpg" alt="Medical examination room with equipment" width="300" height="200")
       img.img-custom(src="https://storage.googleapis.com/a1aa/image/u69xlGbPNfTf70Q1KYqk3k6YNkgfYlWafAKguFT3J3yzfre7E.jpg" alt="Hospital bed in a clean room" width="300" height="200")
       img.img-custom(src="https://storage.googleapis.com/a1aa/image/SyzxowAuWJ5lN5wfFZ3VKTSv6B0IHw9jec1ULK0Qvueffre7E.jpg" alt="MRI machine in a medical facility" width="300" height="200")
->>>>>>> df27286fc25a02bc31f429e02d8a53a0a52d0f0d

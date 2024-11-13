@@ -1626,519 +1626,212 @@ h1.inpatient-title {
   width: 200px;
   height: auto;
 }
-/*laboratorium*/
+/* laboratorium */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
 
-.content-container {
+.lab-container {
   width: 80%;
   margin: 0 auto;
   padding: 20px;
   background-color: #fff;
 }
 
-.breadcrumb-section {
+.lab-breadcrumb {
   font-size: 14px;
-  color: #888;
+  color: #666;
   margin-bottom: 20px;
 }
 
-.breadcrumb-section a {
-  color: #888;
+.lab-breadcrumb a {
+  color: #666;
   text-decoration: none;
 }
 
-.breadcrumb-section a:hover {
+.lab-breadcrumb a:hover {
   text-decoration: underline;
 }
 
-.image-wrapper {
+.lab-image-wrapper {
   text-align: center;
   margin-bottom: 20px;
+  position: relative;
 }
 
-.image-wrapper img {
-  width: 100%; /* Mengisi seluruh lebar container */
+.lab-image-wrapper img {
+  width: 100%;
+  max-width: 800px;
   border-radius: 10px;
 }
 
-.image-caption {
-  position: relative;
-  top: -250px;
+.lab-image-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: red;
   font-size: 24px;
   font-weight: bold;
+  text-align: center;
 }
 
-.lab-details {
+.lab-content {
   margin-bottom: 20px;
 }
 
-.section-title {
+.lab-content h2 {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-.sub-section-title {
+.lab-content h3 {
   font-size: 20px;
   margin-bottom: 10px;
 }
 
-.description-text {
+.lab-content p {
   font-size: 16px;
   line-height: 1.6;
-  color: #333;
+  margin-bottom: 10px;
 }
 
-.lab-list {
+.lab-content ul {
   list-style-type: disc;
   padding-left: 20px;
 }
 
-.lab-list li {
+.lab-content ul li {
+  font-size: 16px;
   margin-bottom: 5px;
 }
 
-.gallery-section {
+.lab-gallery {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
-.gallery-title {
-  font-size: 24px;
-  margin-bottom: 20px;
+.lab-gallery h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
-.gallery-images img {
-  width: 30%;
-  margin: 0 1.5%;
-  border-radius: 10px;
+.lab-gallery 
+
+/*radiologi */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
 }
-/* raddiologi */
-.container {
+
+.radiology-container {
   width: 80%;
   margin: 0 auto;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.breadcrumb {
+.radiology-breadcrumb {
   font-size: 14px;
   color: #666;
   margin-bottom: 20px;
 }
 
-.breadcrumb a {
+.radiology-breadcrumb a {
   color: #666;
   text-decoration: none;
 }
 
-.breadcrumb a:hover {
+.radiology-breadcrumb a:hover {
   text-decoration: underline;
 }
 
-.header {
-  text-align: center;
+.radiology-header {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
   margin-bottom: 20px;
   position: relative;
-}
-
-.header img {
-  width: 10000px; /* Ukuran tetap lebar 800px */
-  height: 400px; /* Ukuran tetap tinggi 400px */
-  object-fit: cover; /* Mengisi area tanpa mengubah proporsi */
-  border-radius: 10px;
-  max-width: 100%; /* Responsif di layar lebih kecil */
-}
-
-.header h1 {
-  color: #e74c3c;
-  font-size: 24px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  padding: 0;
-}
-
-.description {
-  margin-bottom: 20px;
-}
-
-.description h2 {
-  font-size: 18px;
-  color: #333;
-}
-
-.description p {
-  font-size: 14px;
-  color: #666;
-  line-height: 1.6;
-}
-
-.services {
-  margin-bottom: 20px;
-}
-
-.service-item {
-  background-color: #3498db;
-  color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.service-item-content {
-  display: none;
-  padding: 10px;
-  border: 1px solid #3498db;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  font-size: 14px;
-  color: #666;
-  background-color: #f5f5f5;
-}
-
-.gallery {
-  text-align: center;
-}
-
-.gallery h2 {
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.gallery-images {
   display: flex;
   justify-content: center;
-  gap: 15px; /* Menambahkan jarak antar gambar di galeri */
+  align-items: center;
 }
 
-.gallery-images img {
-  width: 20%;
+.radiology-header img {
+  width: 100%;
   height: auto;
+  max-width: 800px;
+  max-height: 400px;
   border-radius: 10px;
 }
-.service-item {
-  background-color: #3498db;
-  color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  font-size: 14px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.service-item i {
-  transition: transform 0.3s ease; /* Animasi untuk ikon */
-}
-
-.service-item-content {
-  display: none;
-  padding: 10px;
-  border: 1px solid #3498db;
-  border-radius: 5px;
-  margin-top: 5px;
-  font-size: 14px;
-  color: #666;
-  background-color: #f5f5f5;
-}
-.service-item {
-  background-color: #3498db;
-  color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  font-size: 14px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.service-item i {
-  transition: transform 0.3s ease; /* Animasi rotasi ikon */
-}
-
-.service-item-content {
-  display: none; /* Tersembunyi secara default */
-  padding: 10px;
-  border: 1px solid #3498db;
-  border-radius: 5px;
-  margin-top: 5px;
-  font-size: 14px;
-  color: #666;
-  background-color: #f5f5f5;
-}
-/* dropdown */
-.service-item {
-  background-color: #3498db;
-  color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  font-size: 14px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.service-item label {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  cursor: pointer;
-}
-
-.service-item i {
-  transition: transform 0.3s ease; /* Animasi rotasi ikon */
-}
-
-/* Sembunyikan checkbox */
-.toggle-checkbox {
-  display: none;
-}
-
-/* Konten dropdown, tersembunyi secara default */
-.service-item-content {
-  display: none;
-  padding: 10px;
-  border: 1px solid #3498db;
-  border-radius: 5px;
-  margin-top: 5px;
-  font-size: 14px;
-  color: #666;
-  background-color: #f5f5f5;
-}
-
-/* Tampilkan konten dropdown jika checkbox tercentang */
-.toggle-checkbox:checked + label + .service-item-content {
-  display: block;
-}
-
-/* Rotasi ikon ketika konten dropdown terbuka */
-.toggle-checkbox:checked + label i {
-  transform: rotate(180deg);
-}
-/*medical check up */
-<<<<<<< HEAD
-.custom-container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.custom-header {
-  position: relative;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.custom-header img {
-  width: 100%;
-  height: auto;
-  max-height: 400px;
-  object-fit: cover;
-}
-
-.custom-header-title {
+.radiology-header-text {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: red;
-  font-size: 36px;
-  margin: 0;
-}
-
-.custom-description,
-.custom-section,
-.custom-info,
-.custom-gallery {
-  margin-bottom: 40px;
-}
-
-.custom-description-title,
-.custom-section-title,
-.custom-info-title,
-.custom-gallery-title {
-  color: #000000;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.custom-description-text,
-.custom-section-text {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.custom-info-list {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-.custom-info-list li {
-  margin-bottom: 10px;
-}
-
-.custom-gallery {
-  text-align: center;
-}
-
-.custom-gallery-images img {
-  width: 30%;
-  height: auto;
-  margin: 0 10px;
-}
-/*gawat darurat*/
-.main-wrapper {
-  width: 80%;
-  margin: 0 auto;
-  background-color: #ffffff;
-  padding: 20px;
-}
-
-.banner-section {
-  position: relative;
-  text-align: center;
-  overflow: hidden;
-  max-height: 300px;
-}
-
-.banner-section img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.banner-text-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: #ff0000;
   font-size: 24px;
   font-weight: bold;
+  text-align: center;
 }
 
-.banner-subtitle {
+.radiology-description {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.radiology-service-item {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+
+.radiology-service-item:hover .radiology-dropdown {
   display: block;
-  color: #ff0000;
-  font-size: 36px;
 }
 
-.section-content,
-.section-details,
-.section-extra-info,
-.section-gallery {
-  margin-top: 20px;
-}
-
-.section-content-title,
-.section-details-title,
-.section-extra-info-title,
-.section-gallery-title {
-  color: #000000;
-  font-size: 18px;
-}
-
-.section-text,
-.section-detail-text,
-.extra-info-list {
+.radiology-dropdown {
+  display: none;
+  position: relative;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: #333;
+  padding: 10px 20px;
   font-size: 14px;
-  line-height: 1.6;
-  color: #333333;
 }
 
-.gallery-display {
+.radiology-dropdown p {
+  color: #333;
+  padding: 10px 0;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+
+.radiology-dropdown p:hover {
+  background-color: #f1f1f1;
+}
+
+.radiology-gallery {
   text-align: center;
+  margin-top: 40px;
 }
 
-.gallery-images img {
+.radiology-gallery img {
   width: 30%;
-  height: auto;
-  margin: 10px;
-=======
-.container-custom {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  max-width: 1200px;
-}
-
-.nav-custom {
-  font-size: 0.875rem;
-  color: #4a5568;
-  margin-bottom: 1rem;
-}
-
-.banner-custom img {
-  width: 1900px;
-  height: 600px;
-}
-
-.banner-text-custom {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.title-small-custom {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #ffffff;
-}
-
-.title-large-custom {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #ef4444;
-}
-
-.section-title-custom {
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-
-.section-content-custom {
-  margin-bottom: 1rem;
-}
-
-.gallery-custom {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr;
-}
-
-@media (min-width: 768px) {
-  .gallery-custom {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.img-custom {
-  width: 600px;
-  height: 400px;
->>>>>>> df27286fc25a02bc31f429e02d8a53a0a52d0f0d
+  margin: 0 10px;
+  border-radius: 10px;
 }
