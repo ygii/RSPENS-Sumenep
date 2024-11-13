@@ -1,3 +1,40 @@
+<<<<<<< HEAD
+// Mixin untuk Banner Section
+mixin bannerSection(imageSrc, mainText, subText)
+  .banner-section
+    img(src=imageSrc alt="Medical equipment in a clean, modern room")
+    .banner-text-overlay
+      = mainText
+      span.banner-subtitle= subText
+
+// Mixin untuk Konten Utama
+mixin sectionContent(title, text)
+  .section-content
+    h2.section-content-title= title
+    p.section-text= text
+
+// Mixin untuk Section Detail
+mixin sectionDetails(title, text)
+  .section-details
+    h2.section-details-title= title
+    p.section-detail-text= text
+
+// Mixin untuk Informasi Tambahan
+mixin sectionExtraInfo(title, items)
+  .section-extra-info
+    h2.section-extra-info-title= title
+    ul.extra-info-list
+      each item in items
+        li= item
+
+// Mixin untuk Galeri
+mixin sectionGallery(images)
+  .section-gallery
+    h2.section-gallery-title Galeri
+    .gallery-images
+      each image in images
+        img(src=image.src alt=image.alt)
+=======
 // Mixin untuk header gambar dan teks
 mixin headerImage(src, alt, text)
   .header-image
@@ -25,3 +62,4 @@ mixin gallerySection(title, images)
     .gallery-images
       each image in images
         img(src=image.src, alt=image.alt)
+>>>>>>> df27286fc25a02bc31f429e02d8a53a0a52d0f0d
