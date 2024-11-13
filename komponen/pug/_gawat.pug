@@ -1,27 +1,33 @@
-// Mixin untuk header gambar dan teks
-mixin headerImage(src, alt, text)
-  .header-image
-    img(src=src, alt=alt)
-    .header-text= text
+// Komponen Breadcrumb
+mixin breadcrumb(path)
+  .breadcrumb= path
 
-// Mixin untuk konten deskripsi
-mixin contentSection(title, paragraphs)
-  .content
+// Komponen Header dengan Gambar dan Teks
+mixin headerSection(imageSrc, altText, mainText, subText)
+  .header
+    img.header-image(src=imageSrc alt=altText)
+    .header-text
+      p= mainText
+      p= subText
+
+// Komponen Deskripsi
+mixin descriptionSection(title, paragraphs)
+  .description
     h2= title
-    each para in paragraphs
-      p= para
+    each paragraph in paragraphs
+      p= paragraph
 
-// Mixin untuk daftar layanan
-mixin servicesList(title, items)
-  h2= title
-  ul
-    each item in items
-      li= item
+// Komponen Informasi Tambahan
+mixin additionalInfo(items)
+  .info
+    h2 Informasi Tambahan
+    ul
+      each item in items
+        li= item
 
-// Mixin untuk galeri gambar
+// Komponen Galeri
 mixin gallerySection(title, images)
   .gallery
     h2= title
-    .gallery-images
-      each image in images
-        img(src=image.src, alt=image.alt)
+    each image in images
+      img(src=image.src alt=image.alt width="300" height="200")
