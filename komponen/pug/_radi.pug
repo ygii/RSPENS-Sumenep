@@ -1,26 +1,38 @@
-mixin headerImage(imageSrc, altText, mainText, subText)
-  .header
-    img(src=imageSrc alt=altText)
-    h1
-      span= mainText
-      br
-      span= subText
 
-// Mixin for description section
-mixin description(title, text)
-  .description
+//- Mixin untuk breadcrumb
+mixin breadcrumbRadiology(links)
+  .radiology-breadcrumb
+    each link, index in links
+      a(href=link.href)= link.text
+      if index < links.length - 1
+        |  /
+
+//- Mixin untuk header gambar
+mixin headerImageRadiology(imageSrc, mainText, subText)
+  .radiology-header
+    img(src=imageSrc alt="Radiology Header Image")
+    .radiology-header-text
+      | #{mainText}
+      br
+      | #{subText}
+
+//- Mixin untuk deskripsi
+mixin descriptionRadiology(title, text)
+  .radiology-description
     h2= title
     p= text
 
-// Mixin for services with dropdown content
-mixin serviceItem(title, content, contentId)
-  .service-item(onclick=`toggleContent('${contentId}')`)= title
-  .service-item-content(id=contentId)= content
+//- Mixin untuk layanan radiologi
+mixin serviceItemRadiology(title, description)
+  .radiology-service-item
+    = title
+    if description
+      .radiology-dropdown
+        p= description
 
-// Mixin for gallery section
-mixin gallery(images)
-  .gallery
+//- Mixin untuk galeri
+mixin galleryRadiology(images)
+  .radiology-gallery
     h2 GALERI
-    .gallery-images
-      each image in images
-        img(src=image.src alt=image.alt)
+    each image in images
+      img(src=image.src alt=image.alt)
