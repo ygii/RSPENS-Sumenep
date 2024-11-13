@@ -1918,3 +1918,109 @@ body {
   color: #333;
   margin-bottom: 10px;
 }
+.gallery {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.gallery h2 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.gallery img {
+  width: 30%;
+  margin-right: 1.66%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.gallery img:last-child {
+  margin-right: 0;
+}
+
+/* gawat darurat */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.header {
+  text-align: center;
+  position: relative;
+}
+
+.header-image {
+  width: 800px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: red;
+  font-size: 24px;
+  text-align: center;
+}
+
+.header-text p:last-child {
+  font-weight: bold;
+}
+
+.description {
+  margin-top: 20px;
+}
+
+.description h2 {
+  font-size: 18px;
+  color: #333;
+}
+
+.description p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.gallery {
+  margin-top: 40px;
+}
+
+.gallery img {
+  width: 30%;
+  margin-right: 1.66%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.gallery img:last-child {
+  margin-right: 0;
+}
+
+.info {
+  margin-top: 20px;
+}
+
+.info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.info ul li {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+}

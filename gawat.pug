@@ -2,41 +2,36 @@ extends komponen/pug/_template.pug
 
 block content
   .container
-    .breadcrumb
-      a(href='#') Home
-      |  /
-      a(href='#') Layanan
-      |  / Gawat Darurat
+    +breadcrumb("Home / Layanan / Medical ")
 
-    // Menggunakan mixin headerImage
-    +headerImage("https://storage.googleapis.com/a1aa/image/8msAUG70Ub4jEJa6SfYIkSIGbQQ3W9hFtnv5z6mvPj6NIJ3JA.jpg", "Emergency Room", "Gawat Darurat")
+    +headerSection(
+      "https://storage.googleapis.com/a1aa/image/1qDyA5fBppWAa6KCIMVmcwLZ2XQtbLDvXcRSPUHU0IsbGP4JA.jpg",
+      "Medical equipment in a clean, modern room",
+      "Selamat Datang Di",
+      "Medical Check Up"
+    )
 
-    // Menggunakan mixin contentSection
-    +contentSection("Deskripsi", [
-      "Pelayanan",
-      "IGD RS PENS Surabaya dapat menangani kasus gawat darurat segala usia, mulai anak hingga dewasa...",
-      "Pelayanan Klinik Emergensi",
-      "IGD RS PENS dapat menangani kasus gawat darurat segala usia, mulai anak hingga dewasa...",
-      "Pelayanan gawat darurat kebidanan dan kandungan",
-      "IGD RS PENS dapat menangani kasus gawat darurat segala usia, mulai anak hingga dewasa..."
+    +descriptionSection("Deskripsi", [
+      "Gaya hidup modern dan tingkat stres yang tinggi berdampak terhadap kesehatan...",
+      "Teknologi medis canggih dan tenaga medis terlatih untuk mendapatkan gambaran kondisi kesehatan tubuh Anda.",
+      "High Definition Magnetic Resonance Imaging(MRI) 3 Tesla Skyra",
+      "Teknologi diagnostik pencitraan tubuh yang memiliki resolusi sangat tinggi...",
+      "CT–scan Flash with Dual Source",
+      "Sebuah sistem yang menghasilkan gambar dengan sinar X-ray yang diambil dari berbagai sudut...",
+      "Body Mass Composition Analyzer",
+      "Alat yang dapat digunakan untuk mengukur indeks massa tubuh, mengukur persentase lemak...",
+      "One Stop Service",
+      "Semua pemeriksaan terdapat dalam satu area, mulai dari pendaftaran dokter dari berbagai spesialisasi..."
     ])
 
-    // Menggunakan mixin servicesList
-    +servicesList("Layanan", [
-      "Ruang penanganan emergensi (5 bed)",
-      "Ruang observasi (2 bed)",
-      "Ruang IGD (5 ruangan)",
-      "Ruang isolasi tekanan negatif (2 bed)",
-      "Ruang perawatan pasien berkaitan negatif",
-      "High flow nasal cannula",
-      "Ventilator",
-      "Monitor",
-      "Ambulans gawat darurat"
+    +additionalInfo([
+      "1. Untuk info paket-paket MCU dapat menghubungi:",
+      "2. Untuk pendaftaran silahkan menghubungi:",
+      "Telephone : (021) 8062 7820"
     ])
 
-    // Menggunakan mixin gallerySection
-    +gallerySection("GALERI", [
-      { src: "https://storage.googleapis.com/a1aa/image/FboVqixaKO4bEBLujNvtAkGqMV8dR4wrjPMcd5znDW9Fkk7E.jpg", alt: "Emergency Room Entrance" },
-      { src: "https://storage.googleapis.com/a1aa/image/CYFePkpDRlTETqkFfsQ6VVqSXA2vZvf7ZnKub1OVcfWjBJ5OB.jpg", alt: "Hospital Building" },
-      { src: "https://storage.googleapis.com/a1aa/image/HknxY2ylXza5PpH4t4UOXN9AQovLLAhtXD7SPrgRT0QGkk7E.jpg", alt: "Emergency Medical Team" }
+    +gallerySection("Galeri", [
+      {src: "https://storage.googleapis.com/a1aa/image/1qDyA5fBppWAa6KCIMVmcwLZ2XQtbLDvXcRSPUHU0IsbGP4JA.jpg", alt: "Medical equipment in a clean, modern room"},
+      {src: "https://storage.googleapis.com/a1aa/image/XFeDbtuqZvSoL6whSmGDxqZZScpA1rnvDmuuUn3PCWYcGP4JA.jpg", alt: "Hospital bed in a clean, modern room"},
+      {src: "https://storage.googleapis.com/a1aa/image/R6Y1Y8p6LsJhABeYUAkEAUJ6OL0Hng9KPQdjfcS1CYi2MegnA.jpg", alt: "MRI machine in a clean, modern room"}
     ])
